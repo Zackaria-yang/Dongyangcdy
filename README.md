@@ -1,10 +1,5 @@
-- 👋 Hi, I’m @Dongyangcdy
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Dongyangcdy/Dongyangcdy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# I am Zackaria
++ I am an amateur computer science enthusiast.
++ I am a video game player who enjoys discovering new worlds.
++ I am a back-end network programming learner with a passion for developing efficient network applications.
++ I'm also a fan of open-source culture like almost everyone here.
