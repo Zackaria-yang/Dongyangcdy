@@ -1,0 +1,18 @@
+NET eth_rxc                   TNM_NET = eth_rxc_pin;
+TIMESPEC TS_eth_rxc_pin = PERIOD eth_rxc_pin 125000 kHz;
+
+NET sys_rst_n                 LOC = G16 | IOSTANDARD = "LVCMOS33"; 
+
+NET eth_rxc                   LOC = J16 | IOSTANDARD = "LVCMOS33";        
+NET eth_rx_ctl                LOC = P16 | IOSTANDARD = "LVCMOS33";       
+NET eth_rxd<0>                LOC = N16 | IOSTANDARD = "LVCMOS33";        
+NET eth_rxd<1>                LOC = M16 | IOSTANDARD = "LVCMOS33";   
+NET eth_rxd<2>                LOC = L16 | IOSTANDARD = "LVCMOS33";   
+NET eth_rxd<3>                LOC = K16 | IOSTANDARD = "LVCMOS33";     
+NET eth_txc                   LOC = T15 | IOSTANDARD = "LVCMOS33";        
+NET eth_tx_ctl                LOC = R15 | IOSTANDARD = "LVCMOS33";       
+NET eth_txd<0>                LOC = R16 | IOSTANDARD = "LVCMOS33";        
+NET eth_txd<1>                LOC = T14 | IOSTANDARD = "LVCMOS33";   
+NET eth_txd<2>                LOC = T13 | IOSTANDARD = "LVCMOS33";   
+NET eth_txd<3>                LOC = T12 | IOSTANDARD = "LVCMOS33"; 
+NET eth_rst_n                 LOC = J14 | IOSTANDARD = "LVCMOS33";   

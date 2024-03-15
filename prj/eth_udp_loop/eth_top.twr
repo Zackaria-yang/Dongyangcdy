@@ -1,0 +1,135 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\download1\fpga\ISE\ISE_app\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe
+-intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_top.twx eth_top.ncd -o
+eth_top.twr eth_top.pcf -ucf eth_top.ucf
+
+Design file:              eth_top.ncd
+Physical constraint file: eth_top.pcf
+Device,package,speed:     xc6slx16,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock eth_rxc
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+eth_rx_ctl     |   -0.265(R)|      FAST  |    1.787(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+               |   -0.193(F)|      FAST  |    1.725(F)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+eth_rxd<0>     |   -0.232(R)|      FAST  |    1.719(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+               |   -0.160(F)|      FAST  |    1.657(F)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+eth_rxd<1>     |   -0.263(R)|      FAST  |    1.785(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+               |   -0.191(F)|      FAST  |    1.723(F)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+eth_rxd<2>     |   -0.240(R)|      FAST  |    1.632(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+               |   -0.168(F)|      FAST  |    1.570(F)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+eth_rxd<3>     |   -0.271(R)|      FAST  |    1.793(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+               |   -0.199(F)|      FAST  |    1.731(F)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+sys_rst_n      |    8.478(R)|      SLOW  |   -0.526(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<0> |    1.743(R)|      SLOW  |   -0.692(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<1> |    1.356(R)|      SLOW  |   -0.434(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<2> |    1.314(R)|      SLOW  |   -0.318(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<3> |    1.084(R)|      SLOW  |   -0.183(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<4> |    1.360(R)|      SLOW  |   -0.368(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<5> |    1.562(R)|      SLOW  |   -0.590(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<6> |    1.576(R)|      SLOW  |   -0.553(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<7> |    1.084(R)|      SLOW  |   -0.046(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<8> |    1.174(R)|      SLOW  |   -0.055(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<9> |    1.202(R)|      SLOW  |   -0.154(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<10>|    1.243(R)|      SLOW  |   -0.118(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<11>|    1.930(R)|      SLOW  |   -0.839(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<12>|    1.554(R)|      SLOW  |   -0.418(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<13>|    1.743(R)|      SLOW  |   -0.727(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<14>|    1.802(R)|      SLOW  |   -0.655(R)|      SLOW  |gmii_rx_clk_OBUF  |   0.000|
+tx_byte_num<15>|    1.740(R)|      SLOW  |   -0.711(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+udp_tx_start_en|    2.077(R)|      SLOW  |   -0.722(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock eth_rxc to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+eth_tx_ctl      |         7.795(R)|      SLOW  |         2.952(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+eth_txc         |         7.800(R)|      SLOW  |         2.957(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<0> |         9.332(R)|      SLOW  |         3.924(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<1> |         9.600(R)|      SLOW  |         4.089(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<2> |         9.413(R)|      SLOW  |         3.967(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<3> |         9.468(R)|      SLOW  |         3.997(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<4> |         9.456(R)|      SLOW  |         4.047(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<5> |         9.329(R)|      SLOW  |         3.879(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<6> |         9.217(R)|      SLOW  |         3.805(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<7> |         9.295(R)|      SLOW  |         3.886(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<8> |         9.072(R)|      SLOW  |         3.731(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<9> |         9.225(R)|      SLOW  |         3.811(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<10>|         9.172(R)|      SLOW  |         3.779(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<11>|         8.768(R)|      SLOW  |         3.567(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<12>|         8.802(R)|      SLOW  |         3.564(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<13>|         9.186(R)|      SLOW  |         3.761(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<14>|         9.012(R)|      SLOW  |         3.673(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_byte_num<15>|         9.438(R)|      SLOW  |         4.082(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<0>     |         8.632(R)|      SLOW  |         3.454(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<1>     |         8.463(R)|      SLOW  |         3.370(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<2>     |         8.231(R)|      SLOW  |         3.251(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<3>     |         8.228(R)|      SLOW  |         3.243(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<4>     |         8.274(R)|      SLOW  |         3.245(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<5>     |         8.448(R)|      SLOW  |         3.348(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<6>     |         8.641(R)|      SLOW  |         3.440(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_data<7>     |         8.610(R)|      SLOW  |         3.414(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_en          |         9.930(R)|      SLOW  |         4.322(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+rec_pkt_done    |        10.091(R)|      SLOW  |         4.413(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+tx_req          |         9.374(R)|      SLOW  |         3.969(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+udp_tx_done     |         9.149(R)|      SLOW  |         3.837(R)|      FAST  |gmii_rx_clk_OBUF  |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock eth_rxc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+eth_rxc        |    9.082|    3.514|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+eth_rxc        |gmii_rx_clk    |    8.087|
+eth_rxc        |gmii_tx_clk    |    7.882|
+sys_rst_n      |eth_rst_n      |   10.159|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jan 21 19:07:41 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4590 MB
+
+
+

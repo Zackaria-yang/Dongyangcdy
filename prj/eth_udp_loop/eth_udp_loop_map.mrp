@@ -1,0 +1,315 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'eth_udp_loop'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd
+eth_udp_loop.pcf 
+Target Device  : xc6slx16
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun Jan 21 15:19:42 2024
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                   893 out of  18,224    4%
+    Number used as Flip Flops:                 871
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               22
+  Number of Slice LUTs:                      1,327 out of   9,112   14%
+    Number used as logic:                    1,290 out of   9,112   14%
+      Number using O6 output only:             934
+      Number using O5 output only:              64
+      Number using O5 and O6:                  292
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:     37
+      Number with same-slice register load:     35
+      Number with same-slice carry load:         2
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   453 out of   2,278   19%
+  Number of MUXCYs used:                       260 out of   4,556    5%
+  Number of LUT Flip Flop pairs used:        1,427
+    Number with an unused Flip Flop:           657 out of   1,427   46%
+    Number with an unused LUT:                 100 out of   1,427    7%
+    Number of fully used LUT-FF pairs:         670 out of   1,427   46%
+    Number of unique control sets:              31
+    Number of slice register sites lost
+      to control set restrictions:              81 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        14 out of     186    7%
+    Number of LOCed IOBs:                       14 out of      14  100%
+    IOB Flip Flops:                             11
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         1 out of      32    3%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   5 out of     248    2%
+    Number used as ILOGIC2s:                     5
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   6 out of     248    2%
+    Number used as OLOGIC2s:                     6
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.44
+
+Peak Memory Usage:  4565 MB
+Total REAL time to MAP completion:  12 secs 
+Total CPU time to MAP completion:   9 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network u_sync_fifo_2048x32b/dout<31> has no load.
+INFO:LIT:395 - The above info message is repeated 32 more times for the
+   following (max. 5 shown):
+   u_sync_fifo_2048x32b/dout<30>,
+   u_sync_fifo_2048x32b/dout<29>,
+   u_sync_fifo_2048x32b/dout<28>,
+   u_sync_fifo_2048x32b/dout<27>,
+   u_sync_fifo_2048x32b/dout<26>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   5 block(s) removed
+  14 block(s) optimized away
+  33 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "u_sync_fifo_2048x32b/dout<31>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<30>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<29>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<28>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<27>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<26>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<25>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<24>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<23>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<22>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<21>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<20>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<19>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<18>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<17>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<16>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<15>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<14>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<13>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<12>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<11>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<10>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<9>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<8>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<7>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<6>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<5>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<4>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<3>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<2>" is sourceless and has been removed.
+The signal "u_sync_fifo_2048x32b/dout<1>" is sourceless and has been removed.
+The signal
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.gl0.wr/gwss.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/grss.rsts/ram_empty_i" is sourceless and has been removed.
+Unused block
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.gl0.rd/grss.rsts/ram_empty_i" (FF) removed.
+Unused block
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.gl0.wr/gwss.wsts/ram_full_i" (FF) removed.
+Unused block
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block
+"u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fif
+o.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND
+		u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fi
+fo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		u_sync_fifo_2048x32b/XST_GND
+VCC 		u_sync_fifo_2048x32b/XST_VCC
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd11
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd111
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd112
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd113
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd115
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd15
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd16
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd17
+   optimized to 0
+LUT2 		u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd19
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| eth_rst_n                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| eth_rx_ctl                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IDDR         |          |          |
+| eth_rxc                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| eth_rxd<0>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IDDR         |          |          |
+| eth_rxd<1>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IDDR         |          |          |
+| eth_rxd<2>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IDDR         |          |          |
+| eth_rxd<3>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IDDR         |          |          |
+| eth_tx_ctl                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| eth_txc                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| eth_txd<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| eth_txd<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| eth_txd<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| eth_txd<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| sys_rst_n                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

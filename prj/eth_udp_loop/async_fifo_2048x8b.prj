@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/fifo.v"
+verilog work "async_fifo_2048x8b.v"

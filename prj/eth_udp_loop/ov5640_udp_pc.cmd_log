@@ -1,0 +1,405 @@
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/licheng/ISE_pro/eth_udp_pc_copy/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/ov5640_udp_pc.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 ov5640_udp_pc.ngc ov5640_udp_pc.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o ov5640_udp_pc_map.ncd ov5640_udp_pc.ngd ov5640_udp_pc.pcf 
+par -w -intstyle ise -ol high -mt off ov5640_udp_pc_map.ncd ov5640_udp_pc.ncd ov5640_udp_pc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ov5640_udp_pc.twx ov5640_udp_pc.ncd -o ov5640_udp_pc.twr ov5640_udp_pc.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f ov5640_udp_pc.ut ov5640_udp_pc.ncd 

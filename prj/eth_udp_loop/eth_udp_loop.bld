@@ -1,0 +1,42 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+D:\download1\fpga\ISE\ISE_app\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc
+D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop.ucf -p
+xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd
+
+Reading NGO file
+"D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.ngc
+" ...
+Loading design module "ipcore_dir/sync_fifo_2048x32b.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4429652 kilobytes
+
+Writing NGD file "eth_udp_loop.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+Writing NGDBUILD log file "eth_udp_loop.bld"...

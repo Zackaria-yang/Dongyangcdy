@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_top_map.ncd eth_top.ngd eth_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_top_map.ncd eth_top.ngd eth_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_top_map.ncd eth_top.ngd eth_top.pcf 
+par -w -intstyle ise -ol high -mt off eth_top_map.ncd eth_top.ncd eth_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_top.twx eth_top.ncd -o eth_top.twr eth_top.pcf -ucf eth_top.ucf 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/eth_udp_pc/prj/eth_udp_loop/eth_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eth_top.ucf -p xc6slx16-ftg256-2 eth_top.ngc eth_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_top_map.ncd eth_top.ngd eth_top.pcf 
+par -w -intstyle ise -ol high -mt off eth_top_map.ncd eth_top.ncd eth_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_top.twx eth_top.ncd -o eth_top.twr eth_top.pcf -ucf eth_top.ucf 
+bitgen -intstyle ise -f eth_top.ut eth_top.ncd 

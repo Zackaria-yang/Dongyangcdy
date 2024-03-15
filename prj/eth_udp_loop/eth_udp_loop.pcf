@@ -1,0 +1,687 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 21 15:19:54 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "eth_rxc" LOCATE = SITE "J16" LEVEL 1;
+COMP "eth_txc" LOCATE = SITE "T15" LEVEL 1;
+COMP "eth_rst_n" LOCATE = SITE "J14" LEVEL 1;
+COMP "eth_rxd<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "eth_rxd<1>" LOCATE = SITE "M16" LEVEL 1;
+COMP "eth_rxd<2>" LOCATE = SITE "L16" LEVEL 1;
+COMP "eth_rxd<3>" LOCATE = SITE "K16" LEVEL 1;
+COMP "eth_txd<0>" LOCATE = SITE "R16" LEVEL 1;
+COMP "eth_txd<1>" LOCATE = SITE "T14" LEVEL 1;
+COMP "eth_txd<2>" LOCATE = SITE "T13" LEVEL 1;
+COMP "eth_txd<3>" LOCATE = SITE "T12" LEVEL 1;
+COMP "eth_rx_ctl" LOCATE = SITE "P16" LEVEL 1;
+COMP "eth_tx_ctl" LOCATE = SITE "R15" LEVEL 1;
+COMP "sys_rst_n" LOCATE = SITE "G16" LEVEL 1;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd" PINNAME
+        CLK0;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd" PINNAME
+        CLK1;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd" PINNAME
+        CLK0;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd" PINNAME
+        CLK1;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd" PINNAME
+        CLK0;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd" PINNAME
+        CLK1;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd" PINNAME
+        CLK0;
+PIN u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd" PINNAME
+        CLK1;
+PIN u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl" PINNAME CLK0;
+PIN u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl" PINNAME CLK1;
+PIN
+        u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl" PINNAME CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl" PINNAME CK1;
+PIN u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc" PINNAME CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc" PINNAME CK1;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd" PINNAME
+        CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd" PINNAME
+        CK1;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd" PINNAME
+        CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd" PINNAME
+        CK1;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd" PINNAME
+        CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd" PINNAME
+        CK1;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd" PINNAME
+        CK0;
+PIN u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<2> = BEL
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd" PINNAME
+        CK1;
+TIMEGRP eth_rxc_pin = BEL "u_arp/u_crc32_d8/crc_data_31" BEL
+        "u_arp/u_crc32_d8/crc_data_30" BEL "u_arp/u_crc32_d8/crc_data_29" BEL
+        "u_arp/u_crc32_d8/crc_data_28" BEL "u_arp/u_crc32_d8/crc_data_27" BEL
+        "u_arp/u_crc32_d8/crc_data_26" BEL "u_arp/u_crc32_d8/crc_data_25" BEL
+        "u_arp/u_crc32_d8/crc_data_24" BEL "u_arp/u_crc32_d8/crc_data_23" BEL
+        "u_arp/u_crc32_d8/crc_data_22" BEL "u_arp/u_crc32_d8/crc_data_21" BEL
+        "u_arp/u_crc32_d8/crc_data_20" BEL "u_arp/u_crc32_d8/crc_data_19" BEL
+        "u_arp/u_crc32_d8/crc_data_18" BEL "u_arp/u_crc32_d8/crc_data_17" BEL
+        "u_arp/u_crc32_d8/crc_data_16" BEL "u_arp/u_crc32_d8/crc_data_15" BEL
+        "u_arp/u_crc32_d8/crc_data_14" BEL "u_arp/u_crc32_d8/crc_data_13" BEL
+        "u_arp/u_crc32_d8/crc_data_12" BEL "u_arp/u_crc32_d8/crc_data_11" BEL
+        "u_arp/u_crc32_d8/crc_data_10" BEL "u_arp/u_crc32_d8/crc_data_9" BEL
+        "u_arp/u_crc32_d8/crc_data_8" BEL "u_arp/u_crc32_d8/crc_data_7" BEL
+        "u_arp/u_crc32_d8/crc_data_6" BEL "u_arp/u_crc32_d8/crc_data_5" BEL
+        "u_arp/u_crc32_d8/crc_data_4" BEL "u_arp/u_crc32_d8/crc_data_3" BEL
+        "u_arp/u_crc32_d8/crc_data_2" BEL "u_arp/u_crc32_d8/crc_data_1" BEL
+        "u_arp/u_crc32_d8/crc_data_0" BEL "u_udp/u_crc32_d8/crc_data_0" BEL
+        "u_udp/u_crc32_d8/crc_data_1" BEL "u_udp/u_crc32_d8/crc_data_2" BEL
+        "u_udp/u_crc32_d8/crc_data_3" BEL "u_udp/u_crc32_d8/crc_data_4" BEL
+        "u_udp/u_crc32_d8/crc_data_5" BEL "u_udp/u_crc32_d8/crc_data_6" BEL
+        "u_udp/u_crc32_d8/crc_data_7" BEL "u_udp/u_crc32_d8/crc_data_8" BEL
+        "u_udp/u_crc32_d8/crc_data_9" BEL "u_udp/u_crc32_d8/crc_data_10" BEL
+        "u_udp/u_crc32_d8/crc_data_11" BEL "u_udp/u_crc32_d8/crc_data_12" BEL
+        "u_udp/u_crc32_d8/crc_data_13" BEL "u_udp/u_crc32_d8/crc_data_14" BEL
+        "u_udp/u_crc32_d8/crc_data_15" BEL "u_udp/u_crc32_d8/crc_data_16" BEL
+        "u_udp/u_crc32_d8/crc_data_17" BEL "u_udp/u_crc32_d8/crc_data_18" BEL
+        "u_udp/u_crc32_d8/crc_data_19" BEL "u_udp/u_crc32_d8/crc_data_20" BEL
+        "u_udp/u_crc32_d8/crc_data_21" BEL "u_udp/u_crc32_d8/crc_data_22" BEL
+        "u_udp/u_crc32_d8/crc_data_23" BEL "u_udp/u_crc32_d8/crc_data_24" BEL
+        "u_udp/u_crc32_d8/crc_data_25" BEL "u_udp/u_crc32_d8/crc_data_26" BEL
+        "u_udp/u_crc32_d8/crc_data_27" BEL "u_udp/u_crc32_d8/crc_data_28" BEL
+        "u_udp/u_crc32_d8/crc_data_29" BEL "u_udp/u_crc32_d8/crc_data_30" BEL
+        "u_udp/u_crc32_d8/crc_data_31" BEL "u_arp/u_arp_rx/arp_rx_done" BEL
+        "u_arp/u_arp_rx/eth_type_15" BEL "u_arp/u_arp_rx/eth_type_14" BEL
+        "u_arp/u_arp_rx/eth_type_13" BEL "u_arp/u_arp_rx/eth_type_12" BEL
+        "u_arp/u_arp_rx/eth_type_11" BEL "u_arp/u_arp_rx/eth_type_10" BEL
+        "u_arp/u_arp_rx/eth_type_9" BEL "u_arp/u_arp_rx/eth_type_8" BEL
+        "u_arp/u_arp_rx/src_ip_31" BEL "u_arp/u_arp_rx/src_ip_30" BEL
+        "u_arp/u_arp_rx/src_ip_29" BEL "u_arp/u_arp_rx/src_ip_28" BEL
+        "u_arp/u_arp_rx/src_ip_27" BEL "u_arp/u_arp_rx/src_ip_26" BEL
+        "u_arp/u_arp_rx/src_ip_25" BEL "u_arp/u_arp_rx/src_ip_24" BEL
+        "u_arp/u_arp_rx/src_ip_23" BEL "u_arp/u_arp_rx/src_ip_22" BEL
+        "u_arp/u_arp_rx/src_ip_21" BEL "u_arp/u_arp_rx/src_ip_20" BEL
+        "u_arp/u_arp_rx/src_ip_19" BEL "u_arp/u_arp_rx/src_ip_18" BEL
+        "u_arp/u_arp_rx/src_ip_17" BEL "u_arp/u_arp_rx/src_ip_16" BEL
+        "u_arp/u_arp_rx/src_ip_15" BEL "u_arp/u_arp_rx/src_ip_14" BEL
+        "u_arp/u_arp_rx/src_ip_13" BEL "u_arp/u_arp_rx/src_ip_12" BEL
+        "u_arp/u_arp_rx/src_ip_11" BEL "u_arp/u_arp_rx/src_ip_10" BEL
+        "u_arp/u_arp_rx/src_ip_9" BEL "u_arp/u_arp_rx/src_ip_8" BEL
+        "u_arp/u_arp_rx/src_ip_7" BEL "u_arp/u_arp_rx/src_ip_6" BEL
+        "u_arp/u_arp_rx/src_ip_5" BEL "u_arp/u_arp_rx/src_ip_4" BEL
+        "u_arp/u_arp_rx/src_ip_3" BEL "u_arp/u_arp_rx/src_ip_2" BEL
+        "u_arp/u_arp_rx/src_ip_1" BEL "u_arp/u_arp_rx/src_ip_0" BEL
+        "u_arp/u_arp_rx/op_data_15" BEL "u_arp/u_arp_rx/op_data_14" BEL
+        "u_arp/u_arp_rx/op_data_13" BEL "u_arp/u_arp_rx/op_data_12" BEL
+        "u_arp/u_arp_rx/op_data_11" BEL "u_arp/u_arp_rx/op_data_10" BEL
+        "u_arp/u_arp_rx/op_data_9" BEL "u_arp/u_arp_rx/op_data_8" BEL
+        "u_arp/u_arp_rx/op_data_7" BEL "u_arp/u_arp_rx/op_data_6" BEL
+        "u_arp/u_arp_rx/op_data_5" BEL "u_arp/u_arp_rx/op_data_4" BEL
+        "u_arp/u_arp_rx/op_data_3" BEL "u_arp/u_arp_rx/op_data_2" BEL
+        "u_arp/u_arp_rx/op_data_1" BEL "u_arp/u_arp_rx/op_data_0" BEL
+        "u_arp/u_arp_rx/src_mac_47" BEL "u_arp/u_arp_rx/src_mac_46" BEL
+        "u_arp/u_arp_rx/src_mac_45" BEL "u_arp/u_arp_rx/src_mac_44" BEL
+        "u_arp/u_arp_rx/src_mac_43" BEL "u_arp/u_arp_rx/src_mac_42" BEL
+        "u_arp/u_arp_rx/src_mac_41" BEL "u_arp/u_arp_rx/src_mac_40" BEL
+        "u_arp/u_arp_rx/src_mac_39" BEL "u_arp/u_arp_rx/src_mac_38" BEL
+        "u_arp/u_arp_rx/src_mac_37" BEL "u_arp/u_arp_rx/src_mac_36" BEL
+        "u_arp/u_arp_rx/src_mac_35" BEL "u_arp/u_arp_rx/src_mac_34" BEL
+        "u_arp/u_arp_rx/src_mac_33" BEL "u_arp/u_arp_rx/src_mac_32" BEL
+        "u_arp/u_arp_rx/src_mac_31" BEL "u_arp/u_arp_rx/src_mac_30" BEL
+        "u_arp/u_arp_rx/src_mac_29" BEL "u_arp/u_arp_rx/src_mac_28" BEL
+        "u_arp/u_arp_rx/src_mac_27" BEL "u_arp/u_arp_rx/src_mac_26" BEL
+        "u_arp/u_arp_rx/src_mac_25" BEL "u_arp/u_arp_rx/src_mac_24" BEL
+        "u_arp/u_arp_rx/src_mac_23" BEL "u_arp/u_arp_rx/src_mac_22" BEL
+        "u_arp/u_arp_rx/src_mac_21" BEL "u_arp/u_arp_rx/src_mac_20" BEL
+        "u_arp/u_arp_rx/src_mac_19" BEL "u_arp/u_arp_rx/src_mac_18" BEL
+        "u_arp/u_arp_rx/src_mac_17" BEL "u_arp/u_arp_rx/src_mac_16" BEL
+        "u_arp/u_arp_rx/src_mac_15" BEL "u_arp/u_arp_rx/src_mac_14" BEL
+        "u_arp/u_arp_rx/src_mac_13" BEL "u_arp/u_arp_rx/src_mac_12" BEL
+        "u_arp/u_arp_rx/src_mac_11" BEL "u_arp/u_arp_rx/src_mac_10" BEL
+        "u_arp/u_arp_rx/src_mac_9" BEL "u_arp/u_arp_rx/src_mac_8" BEL
+        "u_arp/u_arp_rx/src_mac_7" BEL "u_arp/u_arp_rx/src_mac_6" BEL
+        "u_arp/u_arp_rx/src_mac_5" BEL "u_arp/u_arp_rx/src_mac_4" BEL
+        "u_arp/u_arp_rx/src_mac_3" BEL "u_arp/u_arp_rx/src_mac_2" BEL
+        "u_arp/u_arp_rx/src_mac_1" BEL "u_arp/u_arp_rx/src_mac_0" BEL
+        "u_arp/u_arp_rx/des_ip_t_31" BEL "u_arp/u_arp_rx/des_ip_t_30" BEL
+        "u_arp/u_arp_rx/des_ip_t_29" BEL "u_arp/u_arp_rx/des_ip_t_28" BEL
+        "u_arp/u_arp_rx/des_ip_t_27" BEL "u_arp/u_arp_rx/des_ip_t_26" BEL
+        "u_arp/u_arp_rx/des_ip_t_25" BEL "u_arp/u_arp_rx/des_ip_t_24" BEL
+        "u_arp/u_arp_rx/des_ip_t_23" BEL "u_arp/u_arp_rx/des_ip_t_22" BEL
+        "u_arp/u_arp_rx/des_ip_t_21" BEL "u_arp/u_arp_rx/des_ip_t_20" BEL
+        "u_arp/u_arp_rx/des_ip_t_19" BEL "u_arp/u_arp_rx/des_ip_t_18" BEL
+        "u_arp/u_arp_rx/des_ip_t_17" BEL "u_arp/u_arp_rx/des_ip_t_16" BEL
+        "u_arp/u_arp_rx/des_ip_t_15" BEL "u_arp/u_arp_rx/des_ip_t_14" BEL
+        "u_arp/u_arp_rx/des_ip_t_13" BEL "u_arp/u_arp_rx/des_ip_t_12" BEL
+        "u_arp/u_arp_rx/des_ip_t_11" BEL "u_arp/u_arp_rx/des_ip_t_10" BEL
+        "u_arp/u_arp_rx/des_ip_t_9" BEL "u_arp/u_arp_rx/des_ip_t_8" BEL
+        "u_arp/u_arp_rx/des_ip_t_7" BEL "u_arp/u_arp_rx/des_ip_t_6" BEL
+        "u_arp/u_arp_rx/des_ip_t_5" BEL "u_arp/u_arp_rx/des_ip_t_4" BEL
+        "u_arp/u_arp_rx/des_ip_t_3" BEL "u_arp/u_arp_rx/des_ip_t_2" BEL
+        "u_arp/u_arp_rx/des_ip_t_1" BEL "u_arp/u_arp_rx/des_ip_t_0" BEL
+        "u_arp/u_arp_rx/src_ip_t_31" BEL "u_arp/u_arp_rx/src_ip_t_30" BEL
+        "u_arp/u_arp_rx/src_ip_t_29" BEL "u_arp/u_arp_rx/src_ip_t_28" BEL
+        "u_arp/u_arp_rx/src_ip_t_27" BEL "u_arp/u_arp_rx/src_ip_t_26" BEL
+        "u_arp/u_arp_rx/src_ip_t_25" BEL "u_arp/u_arp_rx/src_ip_t_24" BEL
+        "u_arp/u_arp_rx/src_ip_t_23" BEL "u_arp/u_arp_rx/src_ip_t_22" BEL
+        "u_arp/u_arp_rx/src_ip_t_21" BEL "u_arp/u_arp_rx/src_ip_t_20" BEL
+        "u_arp/u_arp_rx/src_ip_t_19" BEL "u_arp/u_arp_rx/src_ip_t_18" BEL
+        "u_arp/u_arp_rx/src_ip_t_17" BEL "u_arp/u_arp_rx/src_ip_t_16" BEL
+        "u_arp/u_arp_rx/src_ip_t_15" BEL "u_arp/u_arp_rx/src_ip_t_14" BEL
+        "u_arp/u_arp_rx/src_ip_t_13" BEL "u_arp/u_arp_rx/src_ip_t_12" BEL
+        "u_arp/u_arp_rx/src_ip_t_11" BEL "u_arp/u_arp_rx/src_ip_t_10" BEL
+        "u_arp/u_arp_rx/src_ip_t_9" BEL "u_arp/u_arp_rx/src_ip_t_8" BEL
+        "u_arp/u_arp_rx/src_ip_t_7" BEL "u_arp/u_arp_rx/src_ip_t_6" BEL
+        "u_arp/u_arp_rx/src_ip_t_5" BEL "u_arp/u_arp_rx/src_ip_t_4" BEL
+        "u_arp/u_arp_rx/src_ip_t_3" BEL "u_arp/u_arp_rx/src_ip_t_2" BEL
+        "u_arp/u_arp_rx/src_ip_t_1" BEL "u_arp/u_arp_rx/src_ip_t_0" BEL
+        "u_arp/u_arp_rx/src_mac_t_47" BEL "u_arp/u_arp_rx/src_mac_t_46" BEL
+        "u_arp/u_arp_rx/src_mac_t_45" BEL "u_arp/u_arp_rx/src_mac_t_44" BEL
+        "u_arp/u_arp_rx/src_mac_t_43" BEL "u_arp/u_arp_rx/src_mac_t_42" BEL
+        "u_arp/u_arp_rx/src_mac_t_41" BEL "u_arp/u_arp_rx/src_mac_t_40" BEL
+        "u_arp/u_arp_rx/src_mac_t_39" BEL "u_arp/u_arp_rx/src_mac_t_38" BEL
+        "u_arp/u_arp_rx/src_mac_t_37" BEL "u_arp/u_arp_rx/src_mac_t_36" BEL
+        "u_arp/u_arp_rx/src_mac_t_35" BEL "u_arp/u_arp_rx/src_mac_t_34" BEL
+        "u_arp/u_arp_rx/src_mac_t_33" BEL "u_arp/u_arp_rx/src_mac_t_32" BEL
+        "u_arp/u_arp_rx/src_mac_t_31" BEL "u_arp/u_arp_rx/src_mac_t_30" BEL
+        "u_arp/u_arp_rx/src_mac_t_29" BEL "u_arp/u_arp_rx/src_mac_t_28" BEL
+        "u_arp/u_arp_rx/src_mac_t_27" BEL "u_arp/u_arp_rx/src_mac_t_26" BEL
+        "u_arp/u_arp_rx/src_mac_t_25" BEL "u_arp/u_arp_rx/src_mac_t_24" BEL
+        "u_arp/u_arp_rx/src_mac_t_23" BEL "u_arp/u_arp_rx/src_mac_t_22" BEL
+        "u_arp/u_arp_rx/src_mac_t_21" BEL "u_arp/u_arp_rx/src_mac_t_20" BEL
+        "u_arp/u_arp_rx/src_mac_t_19" BEL "u_arp/u_arp_rx/src_mac_t_18" BEL
+        "u_arp/u_arp_rx/src_mac_t_17" BEL "u_arp/u_arp_rx/src_mac_t_16" BEL
+        "u_arp/u_arp_rx/src_mac_t_15" BEL "u_arp/u_arp_rx/src_mac_t_14" BEL
+        "u_arp/u_arp_rx/src_mac_t_13" BEL "u_arp/u_arp_rx/src_mac_t_12" BEL
+        "u_arp/u_arp_rx/src_mac_t_11" BEL "u_arp/u_arp_rx/src_mac_t_10" BEL
+        "u_arp/u_arp_rx/src_mac_t_9" BEL "u_arp/u_arp_rx/src_mac_t_8" BEL
+        "u_arp/u_arp_rx/src_mac_t_7" BEL "u_arp/u_arp_rx/src_mac_t_6" BEL
+        "u_arp/u_arp_rx/src_mac_t_5" BEL "u_arp/u_arp_rx/src_mac_t_4" BEL
+        "u_arp/u_arp_rx/src_mac_t_3" BEL "u_arp/u_arp_rx/src_mac_t_2" BEL
+        "u_arp/u_arp_rx/src_mac_t_1" BEL "u_arp/u_arp_rx/src_mac_t_0" BEL
+        "u_arp/u_arp_rx/arp_rx_type" BEL "u_arp/u_arp_rx/error_en" BEL
+        "u_arp/u_arp_rx/skip_en" BEL "u_arp/u_arp_rx/des_mac_t_47" BEL
+        "u_arp/u_arp_rx/des_mac_t_46" BEL "u_arp/u_arp_rx/des_mac_t_45" BEL
+        "u_arp/u_arp_rx/des_mac_t_44" BEL "u_arp/u_arp_rx/des_mac_t_43" BEL
+        "u_arp/u_arp_rx/des_mac_t_42" BEL "u_arp/u_arp_rx/des_mac_t_41" BEL
+        "u_arp/u_arp_rx/des_mac_t_40" BEL "u_arp/u_arp_rx/des_mac_t_39" BEL
+        "u_arp/u_arp_rx/des_mac_t_38" BEL "u_arp/u_arp_rx/des_mac_t_37" BEL
+        "u_arp/u_arp_rx/des_mac_t_36" BEL "u_arp/u_arp_rx/des_mac_t_35" BEL
+        "u_arp/u_arp_rx/des_mac_t_34" BEL "u_arp/u_arp_rx/des_mac_t_33" BEL
+        "u_arp/u_arp_rx/des_mac_t_32" BEL "u_arp/u_arp_rx/des_mac_t_31" BEL
+        "u_arp/u_arp_rx/des_mac_t_30" BEL "u_arp/u_arp_rx/des_mac_t_29" BEL
+        "u_arp/u_arp_rx/des_mac_t_28" BEL "u_arp/u_arp_rx/des_mac_t_27" BEL
+        "u_arp/u_arp_rx/des_mac_t_26" BEL "u_arp/u_arp_rx/des_mac_t_25" BEL
+        "u_arp/u_arp_rx/des_mac_t_24" BEL "u_arp/u_arp_rx/des_mac_t_23" BEL
+        "u_arp/u_arp_rx/des_mac_t_22" BEL "u_arp/u_arp_rx/des_mac_t_21" BEL
+        "u_arp/u_arp_rx/des_mac_t_20" BEL "u_arp/u_arp_rx/des_mac_t_19" BEL
+        "u_arp/u_arp_rx/des_mac_t_18" BEL "u_arp/u_arp_rx/des_mac_t_17" BEL
+        "u_arp/u_arp_rx/des_mac_t_16" BEL "u_arp/u_arp_rx/des_mac_t_15" BEL
+        "u_arp/u_arp_rx/des_mac_t_14" BEL "u_arp/u_arp_rx/des_mac_t_13" BEL
+        "u_arp/u_arp_rx/des_mac_t_12" BEL "u_arp/u_arp_rx/des_mac_t_11" BEL
+        "u_arp/u_arp_rx/des_mac_t_10" BEL "u_arp/u_arp_rx/des_mac_t_9" BEL
+        "u_arp/u_arp_rx/des_mac_t_8" BEL "u_arp/u_arp_rx/des_mac_t_7" BEL
+        "u_arp/u_arp_rx/des_mac_t_6" BEL "u_arp/u_arp_rx/des_mac_t_5" BEL
+        "u_arp/u_arp_rx/des_mac_t_4" BEL "u_arp/u_arp_rx/des_mac_t_3" BEL
+        "u_arp/u_arp_rx/des_mac_t_2" BEL "u_arp/u_arp_rx/des_mac_t_1" BEL
+        "u_arp/u_arp_rx/des_mac_t_0" BEL "u_arp/u_arp_rx/cnt_4" BEL
+        "u_arp/u_arp_rx/cnt_3" BEL "u_arp/u_arp_rx/cnt_2" BEL
+        "u_arp/u_arp_rx/cnt_1" BEL "u_arp/u_arp_rx/cnt_0" BEL
+        "u_udp/u_udp_rx/rec_en" BEL "u_udp/u_udp_rx/rec_pkt_done" BEL
+        "u_udp/u_udp_rx/data_byte_num_15" BEL
+        "u_udp/u_udp_rx/data_byte_num_14" BEL
+        "u_udp/u_udp_rx/data_byte_num_13" BEL
+        "u_udp/u_udp_rx/data_byte_num_12" BEL
+        "u_udp/u_udp_rx/data_byte_num_11" BEL
+        "u_udp/u_udp_rx/data_byte_num_10" BEL "u_udp/u_udp_rx/data_byte_num_9"
+        BEL "u_udp/u_udp_rx/data_byte_num_8" BEL
+        "u_udp/u_udp_rx/data_byte_num_7" BEL "u_udp/u_udp_rx/data_byte_num_6"
+        BEL "u_udp/u_udp_rx/data_byte_num_5" BEL
+        "u_udp/u_udp_rx/data_byte_num_4" BEL "u_udp/u_udp_rx/data_byte_num_3"
+        BEL "u_udp/u_udp_rx/data_byte_num_2" BEL
+        "u_udp/u_udp_rx/data_byte_num_1" BEL "u_udp/u_udp_rx/data_byte_num_0"
+        BEL "u_udp/u_udp_rx/rec_data_0" BEL "u_udp/u_udp_rx/udp_byte_num_15"
+        BEL "u_udp/u_udp_rx/udp_byte_num_14" BEL
+        "u_udp/u_udp_rx/udp_byte_num_13" BEL "u_udp/u_udp_rx/udp_byte_num_12"
+        BEL "u_udp/u_udp_rx/udp_byte_num_11" BEL
+        "u_udp/u_udp_rx/udp_byte_num_10" BEL "u_udp/u_udp_rx/udp_byte_num_9"
+        BEL "u_udp/u_udp_rx/udp_byte_num_8" BEL
+        "u_udp/u_udp_rx/udp_byte_num_7" BEL "u_udp/u_udp_rx/udp_byte_num_6"
+        BEL "u_udp/u_udp_rx/udp_byte_num_5" BEL
+        "u_udp/u_udp_rx/udp_byte_num_4" BEL "u_udp/u_udp_rx/udp_byte_num_3"
+        BEL "u_udp/u_udp_rx/udp_byte_num_2" BEL
+        "u_udp/u_udp_rx/udp_byte_num_1" BEL "u_udp/u_udp_rx/udp_byte_num_0"
+        BEL "u_udp/u_udp_rx/eth_type_15" BEL "u_udp/u_udp_rx/eth_type_14" BEL
+        "u_udp/u_udp_rx/eth_type_13" BEL "u_udp/u_udp_rx/eth_type_12" BEL
+        "u_udp/u_udp_rx/eth_type_11" BEL "u_udp/u_udp_rx/eth_type_10" BEL
+        "u_udp/u_udp_rx/eth_type_9" BEL "u_udp/u_udp_rx/eth_type_8" BEL
+        "u_udp/u_udp_rx/ip_head_byte_num_5" BEL
+        "u_udp/u_udp_rx/ip_head_byte_num_4" BEL
+        "u_udp/u_udp_rx/ip_head_byte_num_3" BEL
+        "u_udp/u_udp_rx/ip_head_byte_num_2" BEL "u_udp/u_udp_rx/des_ip_23" BEL
+        "u_udp/u_udp_rx/des_ip_22" BEL "u_udp/u_udp_rx/des_ip_21" BEL
+        "u_udp/u_udp_rx/des_ip_20" BEL "u_udp/u_udp_rx/des_ip_19" BEL
+        "u_udp/u_udp_rx/des_ip_18" BEL "u_udp/u_udp_rx/des_ip_17" BEL
+        "u_udp/u_udp_rx/des_ip_16" BEL "u_udp/u_udp_rx/des_ip_15" BEL
+        "u_udp/u_udp_rx/des_ip_14" BEL "u_udp/u_udp_rx/des_ip_13" BEL
+        "u_udp/u_udp_rx/des_ip_12" BEL "u_udp/u_udp_rx/des_ip_11" BEL
+        "u_udp/u_udp_rx/des_ip_10" BEL "u_udp/u_udp_rx/des_ip_9" BEL
+        "u_udp/u_udp_rx/des_ip_8" BEL "u_udp/u_udp_rx/des_ip_7" BEL
+        "u_udp/u_udp_rx/des_ip_6" BEL "u_udp/u_udp_rx/des_ip_5" BEL
+        "u_udp/u_udp_rx/des_ip_4" BEL "u_udp/u_udp_rx/des_ip_3" BEL
+        "u_udp/u_udp_rx/des_ip_2" BEL "u_udp/u_udp_rx/des_ip_1" BEL
+        "u_udp/u_udp_rx/des_ip_0" BEL "u_udp/u_udp_rx/des_mac_47" BEL
+        "u_udp/u_udp_rx/des_mac_46" BEL "u_udp/u_udp_rx/des_mac_45" BEL
+        "u_udp/u_udp_rx/des_mac_44" BEL "u_udp/u_udp_rx/des_mac_43" BEL
+        "u_udp/u_udp_rx/des_mac_42" BEL "u_udp/u_udp_rx/des_mac_41" BEL
+        "u_udp/u_udp_rx/des_mac_40" BEL "u_udp/u_udp_rx/des_mac_39" BEL
+        "u_udp/u_udp_rx/des_mac_38" BEL "u_udp/u_udp_rx/des_mac_37" BEL
+        "u_udp/u_udp_rx/des_mac_36" BEL "u_udp/u_udp_rx/des_mac_35" BEL
+        "u_udp/u_udp_rx/des_mac_34" BEL "u_udp/u_udp_rx/des_mac_33" BEL
+        "u_udp/u_udp_rx/des_mac_32" BEL "u_udp/u_udp_rx/des_mac_31" BEL
+        "u_udp/u_udp_rx/des_mac_30" BEL "u_udp/u_udp_rx/des_mac_29" BEL
+        "u_udp/u_udp_rx/des_mac_28" BEL "u_udp/u_udp_rx/des_mac_27" BEL
+        "u_udp/u_udp_rx/des_mac_26" BEL "u_udp/u_udp_rx/des_mac_25" BEL
+        "u_udp/u_udp_rx/des_mac_24" BEL "u_udp/u_udp_rx/des_mac_23" BEL
+        "u_udp/u_udp_rx/des_mac_22" BEL "u_udp/u_udp_rx/des_mac_21" BEL
+        "u_udp/u_udp_rx/des_mac_20" BEL "u_udp/u_udp_rx/des_mac_19" BEL
+        "u_udp/u_udp_rx/des_mac_18" BEL "u_udp/u_udp_rx/des_mac_17" BEL
+        "u_udp/u_udp_rx/des_mac_16" BEL "u_udp/u_udp_rx/des_mac_15" BEL
+        "u_udp/u_udp_rx/des_mac_14" BEL "u_udp/u_udp_rx/des_mac_13" BEL
+        "u_udp/u_udp_rx/des_mac_12" BEL "u_udp/u_udp_rx/des_mac_11" BEL
+        "u_udp/u_udp_rx/des_mac_10" BEL "u_udp/u_udp_rx/des_mac_9" BEL
+        "u_udp/u_udp_rx/des_mac_8" BEL "u_udp/u_udp_rx/des_mac_7" BEL
+        "u_udp/u_udp_rx/des_mac_6" BEL "u_udp/u_udp_rx/des_mac_5" BEL
+        "u_udp/u_udp_rx/des_mac_4" BEL "u_udp/u_udp_rx/des_mac_3" BEL
+        "u_udp/u_udp_rx/des_mac_2" BEL "u_udp/u_udp_rx/des_mac_1" BEL
+        "u_udp/u_udp_rx/des_mac_0" BEL "u_udp/u_udp_rx/error_en" BEL
+        "u_udp/u_udp_rx/skip_en" BEL "u_udp/u_udp_rx/cnt_4" BEL
+        "u_udp/u_udp_rx/cnt_3" BEL "u_udp/u_udp_rx/cnt_2" BEL
+        "u_udp/u_udp_rx/cnt_1" BEL "u_udp/u_udp_rx/cnt_0" BEL
+        "u_arp/u_arp_rx/cur_state_FSM_FFd3" BEL
+        "u_arp/u_arp_rx/cur_state_FSM_FFd5" BEL
+        "u_arp/u_arp_rx/cur_state_FSM_FFd4" BEL
+        "u_arp/u_arp_rx/cur_state_FSM_FFd2" BEL
+        "u_arp/u_arp_rx/cur_state_FSM_FFd1" BEL
+        "u_udp/u_udp_rx/cur_state_FSM_FFd6" BEL "u_udp/u_udp_rx/data_cnt_0"
+        BEL "u_udp/u_udp_rx/data_cnt_1" BEL "u_udp/u_udp_rx/data_cnt_2" BEL
+        "u_udp/u_udp_rx/data_cnt_3" BEL "u_udp/u_udp_rx/data_cnt_4" BEL
+        "u_udp/u_udp_rx/data_cnt_5" BEL "u_udp/u_udp_rx/data_cnt_6" BEL
+        "u_udp/u_udp_rx/data_cnt_7" BEL "u_udp/u_udp_rx/data_cnt_8" BEL
+        "u_udp/u_udp_rx/data_cnt_9" BEL "u_udp/u_udp_rx/data_cnt_10" BEL
+        "u_udp/u_udp_rx/data_cnt_11" BEL "u_udp/u_udp_rx/data_cnt_12" BEL
+        "u_udp/u_udp_rx/data_cnt_13" BEL "u_udp/u_udp_rx/data_cnt_14" BEL
+        "u_udp/u_udp_rx/data_cnt_15" BEL "u_udp/u_udp_rx/cur_state_FSM_FFd7"
+        BEL "u_udp/u_udp_rx/cur_state_FSM_FFd5" BEL
+        "u_udp/u_udp_rx/cur_state_FSM_FFd4" BEL
+        "u_udp/u_udp_rx/cur_state_FSM_FFd3" BEL
+        "u_udp/u_udp_rx/cur_state_FSM_FFd2" BEL
+        "u_udp/u_udp_rx/cur_state_FSM_FFd1" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[3].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[2].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[1].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/rxdata_bus[0].IDDR2_rgmii_rxd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_rx/IDDR2_rgmii_rx_ctl_pins<2>" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_7" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_6" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_5" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_4" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_3" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_2" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_1" BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/gmii_rxd_0" BEL
+        "u_arp/u_arp_tx/data_cnt_4" BEL "u_arp/u_arp_tx/data_cnt_3" BEL
+        "u_arp/u_arp_tx/data_cnt_2" BEL "u_arp/u_arp_tx/data_cnt_1" BEL
+        "u_arp/u_arp_tx/data_cnt_0" BEL "u_arp/u_arp_tx/cur_state_FSM_FFd1"
+        BEL "u_arp/u_arp_tx/cur_state_FSM_FFd2" BEL
+        "u_arp/u_arp_tx/cur_state_FSM_FFd3" BEL
+        "u_arp/u_arp_tx/cur_state_FSM_FFd4" BEL
+        "u_arp/u_arp_tx/cur_state_FSM_FFd5" BEL "u_arp/u_arp_tx/tx_done" BEL
+        "u_arp/u_arp_tx/tx_done_t" BEL "u_arp/u_arp_tx/tx_en_d1" BEL
+        "u_arp/u_arp_tx/arp_data_24_0" BEL "u_arp/u_arp_tx/arp_data_24_2" BEL
+        "u_arp/u_arp_tx/arp_data_24_3" BEL "u_arp/u_arp_tx/arp_data_24_1" BEL
+        "u_arp/u_arp_tx/arp_data_24_4" BEL "u_arp/u_arp_tx/arp_data_24_5" BEL
+        "u_arp/u_arp_tx/arp_data_25_0" BEL "u_arp/u_arp_tx/arp_data_25_1" BEL
+        "u_arp/u_arp_tx/arp_data_25_2" BEL "u_arp/u_arp_tx/arp_data_25_4" BEL
+        "u_arp/u_arp_tx/arp_data_26_1" BEL "u_arp/u_arp_tx/arp_data_26_2" BEL
+        "u_arp/u_arp_tx/arp_data_25_6" BEL "u_arp/u_arp_tx/arp_data_26_3" BEL
+        "u_arp/u_arp_tx/arp_data_26_4" BEL "u_arp/u_arp_tx/arp_data_26_6" BEL
+        "u_arp/u_arp_tx/arp_data_26_7" BEL "u_arp/u_arp_tx/arp_data_26_5" BEL
+        "u_arp/u_arp_tx/arp_data_27_0" BEL "u_arp/u_arp_tx/arp_data_27_3" BEL
+        "u_arp/u_arp_tx/arp_data_27_7" BEL "u_arp/u_arp_tx/arp_data_27_4" BEL
+        "u_arp/u_arp_tx/arp_data_24_6" BEL "u_arp/u_arp_tx/arp_data_24_7" BEL
+        "u_arp/u_arp_tx/arp_data_25_5" BEL "u_arp/u_arp_tx/arp_data_25_7" BEL
+        "u_arp/u_arp_tx/arp_data_25_3" BEL "u_arp/u_arp_tx/arp_data_26_0" BEL
+        "u_arp/u_arp_tx/arp_data_27_1" BEL "u_arp/u_arp_tx/arp_data_27_5" BEL
+        "u_arp/u_arp_tx/arp_data_27_6" BEL "u_arp/u_arp_tx/arp_data_27_2" BEL
+        "u_arp/u_arp_tx/eth_head_0_0" BEL "u_arp/u_arp_tx/eth_head_0_1" BEL
+        "u_arp/u_arp_tx/eth_head_0_2" BEL "u_arp/u_arp_tx/eth_head_0_3" BEL
+        "u_arp/u_arp_tx/eth_head_0_4" BEL "u_arp/u_arp_tx/eth_head_0_5" BEL
+        "u_arp/u_arp_tx/eth_head_0_7" BEL "u_arp/u_arp_tx/eth_head_1_0" BEL
+        "u_arp/u_arp_tx/eth_head_0_6" BEL "u_arp/u_arp_tx/eth_head_1_1" BEL
+        "u_arp/u_arp_tx/eth_head_1_2" BEL "u_arp/u_arp_tx/eth_head_1_4" BEL
+        "u_arp/u_arp_tx/eth_head_1_5" BEL "u_arp/u_arp_tx/eth_head_1_3" BEL
+        "u_arp/u_arp_tx/eth_head_1_6" BEL "u_arp/u_arp_tx/eth_head_1_7" BEL
+        "u_arp/u_arp_tx/eth_head_2_1" BEL "u_arp/u_arp_tx/eth_head_2_2" BEL
+        "u_arp/u_arp_tx/eth_head_2_0" BEL "u_arp/u_arp_tx/eth_head_2_3" BEL
+        "u_arp/u_arp_tx/eth_head_2_4" BEL "u_arp/u_arp_tx/eth_head_2_5" BEL
+        "u_arp/u_arp_tx/eth_head_2_6" BEL "u_arp/u_arp_tx/eth_head_2_7" BEL
+        "u_arp/u_arp_tx/eth_head_3_0" BEL "u_arp/u_arp_tx/eth_head_3_2" BEL
+        "u_arp/u_arp_tx/eth_head_3_3" BEL "u_arp/u_arp_tx/eth_head_3_1" BEL
+        "u_arp/u_arp_tx/eth_head_3_4" BEL "u_arp/u_arp_tx/eth_head_3_5" BEL
+        "u_arp/u_arp_tx/eth_head_3_7" BEL "u_arp/u_arp_tx/eth_head_4_0" BEL
+        "u_arp/u_arp_tx/eth_head_3_6" BEL "u_arp/u_arp_tx/eth_head_4_1" BEL
+        "u_arp/u_arp_tx/eth_head_4_2" BEL "u_arp/u_arp_tx/eth_head_4_4" BEL
+        "u_arp/u_arp_tx/eth_head_4_5" BEL "u_arp/u_arp_tx/eth_head_4_3" BEL
+        "u_arp/u_arp_tx/eth_head_4_6" BEL "u_arp/u_arp_tx/eth_head_4_7" BEL
+        "u_arp/u_arp_tx/eth_head_5_1" BEL "u_arp/u_arp_tx/eth_head_5_2" BEL
+        "u_arp/u_arp_tx/eth_head_5_0" BEL "u_arp/u_arp_tx/eth_head_5_3" BEL
+        "u_arp/u_arp_tx/eth_head_5_4" BEL "u_arp/u_arp_tx/eth_head_5_6" BEL
+        "u_arp/u_arp_tx/eth_head_5_7" BEL "u_arp/u_arp_tx/eth_head_5_5" BEL
+        "u_arp/u_arp_tx/tx_en_d0" BEL "u_arp/u_arp_tx/gmii_tx_en" BEL
+        "u_arp/u_arp_tx/crc_en" BEL "u_arp/u_arp_tx/skip_en" BEL
+        "u_arp/u_arp_tx/gmii_txd_7" BEL "u_arp/u_arp_tx/gmii_txd_6" BEL
+        "u_arp/u_arp_tx/gmii_txd_5" BEL "u_arp/u_arp_tx/gmii_txd_4" BEL
+        "u_arp/u_arp_tx/gmii_txd_3" BEL "u_arp/u_arp_tx/gmii_txd_2" BEL
+        "u_arp/u_arp_tx/gmii_txd_1" BEL "u_arp/u_arp_tx/gmii_txd_0" BEL
+        "u_arp/u_arp_tx/cnt_5" BEL "u_arp/u_arp_tx/cnt_4" BEL
+        "u_arp/u_arp_tx/cnt_3" BEL "u_arp/u_arp_tx/cnt_2" BEL
+        "u_arp/u_arp_tx/cnt_1" BEL "u_arp/u_arp_tx/cnt_0" BEL
+        "u_udp/u_udp_tx/data_cnt_15" BEL "u_udp/u_udp_tx/data_cnt_14" BEL
+        "u_udp/u_udp_tx/data_cnt_13" BEL "u_udp/u_udp_tx/data_cnt_12" BEL
+        "u_udp/u_udp_tx/data_cnt_11" BEL "u_udp/u_udp_tx/data_cnt_10" BEL
+        "u_udp/u_udp_tx/data_cnt_9" BEL "u_udp/u_udp_tx/data_cnt_8" BEL
+        "u_udp/u_udp_tx/data_cnt_7" BEL "u_udp/u_udp_tx/data_cnt_6" BEL
+        "u_udp/u_udp_tx/data_cnt_5" BEL "u_udp/u_udp_tx/data_cnt_4" BEL
+        "u_udp/u_udp_tx/data_cnt_3" BEL "u_udp/u_udp_tx/data_cnt_2" BEL
+        "u_udp/u_udp_tx/data_cnt_1" BEL "u_udp/u_udp_tx/data_cnt_0" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd1" BEL
+        "u_udp/u_udp_tx/real_add_cnt_4" BEL "u_udp/u_udp_tx/real_add_cnt_3"
+        BEL "u_udp/u_udp_tx/real_add_cnt_2" BEL
+        "u_udp/u_udp_tx/real_add_cnt_1" BEL "u_udp/u_udp_tx/real_add_cnt_0"
+        BEL "u_udp/u_udp_tx/cur_state_FSM_FFd3" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd4" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd2" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd6" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd7" BEL
+        "u_udp/u_udp_tx/cur_state_FSM_FFd5" BEL
+        "u_udp/u_udp_tx/check_buffer_18" BEL "u_udp/u_udp_tx/check_buffer_17"
+        BEL "u_udp/u_udp_tx/check_buffer_16" BEL
+        "u_udp/u_udp_tx/check_buffer_15" BEL "u_udp/u_udp_tx/check_buffer_14"
+        BEL "u_udp/u_udp_tx/check_buffer_13" BEL
+        "u_udp/u_udp_tx/check_buffer_12" BEL "u_udp/u_udp_tx/check_buffer_11"
+        BEL "u_udp/u_udp_tx/check_buffer_10" BEL
+        "u_udp/u_udp_tx/check_buffer_9" BEL "u_udp/u_udp_tx/check_buffer_8"
+        BEL "u_udp/u_udp_tx/check_buffer_7" BEL
+        "u_udp/u_udp_tx/check_buffer_6" BEL "u_udp/u_udp_tx/check_buffer_5"
+        BEL "u_udp/u_udp_tx/check_buffer_4" BEL
+        "u_udp/u_udp_tx/check_buffer_3" BEL "u_udp/u_udp_tx/check_buffer_2"
+        BEL "u_udp/u_udp_tx/check_buffer_1" BEL
+        "u_udp/u_udp_tx/check_buffer_0" BEL "u_udp/u_udp_tx/tx_done" BEL
+        "u_udp/u_udp_tx/tx_done_t" BEL "u_udp/u_udp_tx/total_num_2" BEL
+        "u_udp/u_udp_tx/start_en_d1" BEL "u_udp/u_udp_tx/ip_head_46" BEL
+        "u_udp/u_udp_tx/ip_head_06" BEL "u_udp/u_udp_tx/ip_head_75" BEL
+        "u_udp/u_udp_tx/ip_head_65" BEL "u_udp/u_udp_tx/ip_head_55" BEL
+        "u_udp/u_udp_tx/ip_head_45" BEL "u_udp/u_udp_tx/ip_head_36" BEL
+        "u_udp/u_udp_tx/ip_head_219" BEL "u_udp/u_udp_tx/ip_head_120" BEL
+        "u_udp/u_udp_tx/ip_head_05" BEL "u_udp/u_udp_tx/ip_head_35" BEL
+        "u_udp/u_udp_tx/ip_head_72" BEL "u_udp/u_udp_tx/ip_head_62" BEL
+        "u_udp/u_udp_tx/ip_head_52" BEL "u_udp/u_udp_tx/ip_head_42" BEL
+        "u_udp/u_udp_tx/ip_head_33" BEL "u_udp/u_udp_tx/ip_head_216" BEL
+        "u_udp/u_udp_tx/ip_head_117" BEL "u_udp/u_udp_tx/ip_head_02" BEL
+        "u_udp/u_udp_tx/ip_head_155" BEL "u_udp/u_udp_tx/ip_head_145" BEL
+        "u_udp/u_udp_tx/ip_head_135" BEL "u_udp/u_udp_tx/ip_head_125" BEL
+        "u_udp/u_udp_tx/ip_head_115" BEL "u_udp/u_udp_tx/ip_head_105" BEL
+        "u_udp/u_udp_tx/ip_head_95" BEL "u_udp/u_udp_tx/ip_head_85" BEL
+        "u_udp/u_udp_tx/ip_head_15" BEL "u_udp/u_udp_tx/ip_head_14" BEL
+        "u_udp/u_udp_tx/ip_head_13" BEL "u_udp/u_udp_tx/ip_head_12" BEL
+        "u_udp/u_udp_tx/ip_head_11" BEL "u_udp/u_udp_tx/ip_head_10" BEL
+        "u_udp/u_udp_tx/ip_head_9" BEL "u_udp/u_udp_tx/ip_head_8" BEL
+        "u_udp/u_udp_tx/ip_head_23" BEL "u_udp/u_udp_tx/ip_head_22" BEL
+        "u_udp/u_udp_tx/ip_head_21" BEL "u_udp/u_udp_tx/ip_head_20" BEL
+        "u_udp/u_udp_tx/ip_head_19" BEL "u_udp/u_udp_tx/ip_head_18" BEL
+        "u_udp/u_udp_tx/ip_head_17" BEL "u_udp/u_udp_tx/ip_head_16" BEL
+        "u_udp/u_udp_tx/ip_head_31" BEL "u_udp/u_udp_tx/ip_head_30" BEL
+        "u_udp/u_udp_tx/ip_head_29" BEL "u_udp/u_udp_tx/ip_head_28" BEL
+        "u_udp/u_udp_tx/ip_head_27" BEL "u_udp/u_udp_tx/ip_head_26" BEL
+        "u_udp/u_udp_tx/ip_head_25" BEL "u_udp/u_udp_tx/ip_head_24" BEL
+        "u_udp/u_udp_tx/eth_head_0_0" BEL "u_udp/u_udp_tx/eth_head_0_1" BEL
+        "u_udp/u_udp_tx/eth_head_0_2" BEL "u_udp/u_udp_tx/eth_head_0_3" BEL
+        "u_udp/u_udp_tx/eth_head_0_5" BEL "u_udp/u_udp_tx/eth_head_0_6" BEL
+        "u_udp/u_udp_tx/eth_head_0_4" BEL "u_udp/u_udp_tx/eth_head_1_0" BEL
+        "u_udp/u_udp_tx/eth_head_1_1" BEL "u_udp/u_udp_tx/eth_head_0_7" BEL
+        "u_udp/u_udp_tx/eth_head_1_3" BEL "u_udp/u_udp_tx/eth_head_1_4" BEL
+        "u_udp/u_udp_tx/eth_head_1_2" BEL "u_udp/u_udp_tx/eth_head_1_6" BEL
+        "u_udp/u_udp_tx/eth_head_1_7" BEL "u_udp/u_udp_tx/eth_head_1_5" BEL
+        "u_udp/u_udp_tx/eth_head_2_1" BEL "u_udp/u_udp_tx/eth_head_2_2" BEL
+        "u_udp/u_udp_tx/eth_head_2_0" BEL "u_udp/u_udp_tx/eth_head_2_4" BEL
+        "u_udp/u_udp_tx/eth_head_2_5" BEL "u_udp/u_udp_tx/eth_head_2_3" BEL
+        "u_udp/u_udp_tx/eth_head_2_7" BEL "u_udp/u_udp_tx/eth_head_3_0" BEL
+        "u_udp/u_udp_tx/eth_head_2_6" BEL "u_udp/u_udp_tx/eth_head_3_1" BEL
+        "u_udp/u_udp_tx/eth_head_3_2" BEL "u_udp/u_udp_tx/eth_head_3_3" BEL
+        "u_udp/u_udp_tx/eth_head_3_4" BEL "u_udp/u_udp_tx/eth_head_3_6" BEL
+        "u_udp/u_udp_tx/eth_head_3_7" BEL "u_udp/u_udp_tx/eth_head_3_5" BEL
+        "u_udp/u_udp_tx/eth_head_4_1" BEL "u_udp/u_udp_tx/eth_head_4_2" BEL
+        "u_udp/u_udp_tx/eth_head_4_0" BEL "u_udp/u_udp_tx/eth_head_4_4" BEL
+        "u_udp/u_udp_tx/eth_head_4_5" BEL "u_udp/u_udp_tx/eth_head_4_3" BEL
+        "u_udp/u_udp_tx/eth_head_4_7" BEL "u_udp/u_udp_tx/eth_head_5_0" BEL
+        "u_udp/u_udp_tx/eth_head_4_6" BEL "u_udp/u_udp_tx/eth_head_5_2" BEL
+        "u_udp/u_udp_tx/eth_head_5_3" BEL "u_udp/u_udp_tx/eth_head_5_1" BEL
+        "u_udp/u_udp_tx/eth_head_5_5" BEL "u_udp/u_udp_tx/eth_head_5_6" BEL
+        "u_udp/u_udp_tx/eth_head_5_4" BEL "u_udp/u_udp_tx/start_en_d0" BEL
+        "u_udp/u_udp_tx/eth_head_5_7" BEL "u_udp/u_udp_tx/tx_req" BEL
+        "u_udp/u_udp_tx/gmii_tx_en" BEL "u_udp/u_udp_tx/ip_head_1_16" BEL
+        "u_udp/u_udp_tx/ip_head_1_17" BEL "u_udp/u_udp_tx/crc_en" BEL
+        "u_udp/u_udp_tx/ip_head_1_19" BEL "u_udp/u_udp_tx/ip_head_1_20" BEL
+        "u_udp/u_udp_tx/ip_head_1_18" BEL "u_udp/u_udp_tx/ip_head_1_22" BEL
+        "u_udp/u_udp_tx/ip_head_1_23" BEL "u_udp/u_udp_tx/ip_head_1_21" BEL
+        "u_udp/u_udp_tx/ip_head_1_24" BEL "u_udp/u_udp_tx/ip_head_1_25" BEL
+        "u_udp/u_udp_tx/ip_head_1_26" BEL "u_udp/u_udp_tx/ip_head_1_27" BEL
+        "u_udp/u_udp_tx/ip_head_1_29" BEL "u_udp/u_udp_tx/ip_head_1_30" BEL
+        "u_udp/u_udp_tx/ip_head_1_28" BEL "u_udp/u_udp_tx/skip_en" BEL
+        "u_udp/u_udp_tx/trig_tx_en" BEL "u_udp/u_udp_tx/ip_head_1_31" BEL
+        "u_udp/u_udp_tx/gmii_txd_7" BEL "u_udp/u_udp_tx/gmii_txd_6" BEL
+        "u_udp/u_udp_tx/gmii_txd_5" BEL "u_udp/u_udp_tx/gmii_txd_4" BEL
+        "u_udp/u_udp_tx/gmii_txd_3" BEL "u_udp/u_udp_tx/gmii_txd_2" BEL
+        "u_udp/u_udp_tx/gmii_txd_1" BEL "u_udp/u_udp_tx/gmii_txd_0" BEL
+        "u_udp/u_udp_tx/tx_byte_sel_1" BEL "u_udp/u_udp_tx/tx_byte_sel_0" BEL
+        "u_udp/u_udp_tx/cnt_4" BEL "u_udp/u_udp_tx/cnt_3" BEL
+        "u_udp/u_udp_tx/cnt_2" BEL "u_udp/u_udp_tx/cnt_1" BEL
+        "u_udp/u_udp_tx/cnt_0" BEL "u_udp/u_udp_tx/tx_data_num_0" BEL
+        "u_udp/u_udp_rx/rec_byte_num_0" BEL "u_arp/u_arp_tx/arp_data_7_1" BEL
+        "u_eth_ctrl/protocol_sw" BEL "u_gmii_to_rgmii/u_rgmii_rx/gmii_rx_dv"
+        BEL "u_arp/u_arp_rx/cnt_3_1" BEL "u_arp/u_arp_rx/cnt_2_1" BEL
+        "u_arp/u_arp_rx/cnt_4_1" BEL "u_arp/u_arp_rx/cnt_1_1" BEL
+        "u_udp/u_udp_tx/ip_head_35_1" BEL "u_arp/u_arp_rx/cnt_4_2" BEL
+        "u_arp/u_arp_rx/cnt_1_2" BEL "u_arp/u_arp_rx/cnt_2_2" BEL
+        "u_arp/u_arp_rx/cnt_3_2" BEL "u_arp/u_arp_rx/cnt_4_3" BEL
+        "u_arp/u_arp_rx/cnt_1_3" BEL "u_udp/u_udp_tx/ip_head_35_2" BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d1"
+        PIN
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_10"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_9"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_10"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_9"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_6"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_5"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_4"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_3"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_0"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_10"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_9"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_8"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_7"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_6"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_5"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_4"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_3"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_1"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_0"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_10"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_9"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_8"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_7"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_6"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_5"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_4"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_3"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_2"
+        BEL
+        "u_sync_fifo_2048x32b/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_1"
+        PIN "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_tx_ctl_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/ODDR2_rgmii_txc_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[0].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[1].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[2].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<2>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<1>" PIN
+        "u_gmii_to_rgmii/u_rgmii_tx/txdata_bus[3].ODDR2_rgmii_txd_pins<2>";
+TS_eth_rxc_pin = PERIOD TIMEGRP "eth_rxc_pin" 125 MHz HIGH 50%;
+SCHEMATIC END;
+

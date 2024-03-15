@@ -1,0 +1,6 @@
+
+ERROR: This host does not have the appropriate Microsoft Visual C++
+       redistributable packages installed.
+
+       Launching installer: "D:/download1/fpga/ISE/ISE_app/14.7/ISE_DS/PlanAhead\tps\win64\xvcredist.exe"
+VC++ 2008 Redistributable has been installed successfully.

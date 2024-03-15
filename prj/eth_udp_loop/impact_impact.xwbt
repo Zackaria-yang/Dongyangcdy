@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Admin\Desktop\27_eth_icmp_test\40_eth_udp_loop\prj\eth_udp_loop\impact.xsl
+OUTFILE=C:\Users\Admin\Desktop\27_eth_icmp_test\40_eth_udp_loop\prj\eth_udp_loop\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Admin\Desktop\27_eth_icmp_test\40_eth_udp_loop\prj\eth_udp_loop
+LICENSE=iMPACT
+USER_INFO=iMPACT

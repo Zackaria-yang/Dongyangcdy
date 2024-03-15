@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\download1\fpga\ISE\ISE_pro\41_eth_udp_loop\prj\eth_udp_loop\eth_udp_loop.ncd
+OUTFILE=D:\download1\fpga\ISE\ISE_pro\41_eth_udp_loop\prj\eth_udp_loop\eth_udp_loop.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=D:\download1\fpga\ISE\ISE_pro\41_eth_udp_loop\prj\eth_udp_loop
+LICENSE=WebPack
+USER_INFO=__0_0_0

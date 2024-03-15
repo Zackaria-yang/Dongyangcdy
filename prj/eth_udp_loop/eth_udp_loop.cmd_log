@@ -1,0 +1,69 @@
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/Spartan6/Verilog_Prj/eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "C:/Users/Admin/Desktop/27_eth_icmp_test/40_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "C:/Users/Admin/Desktop/27_eth_icmp_test/40_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Admin/Desktop/27_eth_icmp_test/40_eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+bitgen -intstyle ise -f eth_udp_loop.ut eth_udp_loop.ncd 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+xst -intstyle ise -ifn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.xst" -ofn "D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop/eth_udp_loop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc D:/download1/fpga/ISE/ISE_pro/41_eth_udp_loop/prj/eth_udp_loop.ucf -p xc6slx16-ftg256-2 eth_udp_loop.ngc eth_udp_loop.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eth_udp_loop_map.ncd eth_udp_loop.ngd eth_udp_loop.pcf 
+par -w -intstyle ise -ol high -mt off eth_udp_loop_map.ncd eth_udp_loop.ncd eth_udp_loop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eth_udp_loop.twx eth_udp_loop.ncd -o eth_udp_loop.twr eth_udp_loop.pcf 

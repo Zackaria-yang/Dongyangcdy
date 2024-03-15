@@ -1,0 +1,1597 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: eth_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "eth_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "eth_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-ftg256
+
+---- Source Options
+Top Module Name                    : eth_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_tx.v" into library work
+Parsing module <udp_tx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_rx.v" into library work
+Parsing module <udp_rx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\rgmii_tx.v" into library work
+Parsing module <rgmii_tx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\rgmii_rx.v" into library work
+Parsing module <rgmii_rx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\crc32_d8.v" into library work
+Parsing module <crc32_d8>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp_tx.v" into library work
+Parsing module <arp_tx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp_rx.v" into library work
+Parsing module <arp_rx>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp.v" into library work
+Parsing module <udp>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\gmii_to_rgmii.v" into library work
+Parsing module <gmii_to_rgmii>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_ctrl.v" into library work
+Parsing module <eth_ctrl>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp.v" into library work
+Parsing module <arp>.
+Analyzing Verilog file "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_top.v" into library work
+Parsing module <eth_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <eth_top>.
+
+Elaborating module <gmii_to_rgmii>.
+
+Elaborating module <rgmii_rx>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <IDDR2(DDR_ALIGNMENT="C1",INIT_Q0=1'b0,INIT_Q1=1'b0,SRTYPE="ASYNC")>.
+
+Elaborating module <rgmii_tx>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="C0",INIT=1'b0,SRTYPE="ASYNC")>.
+WARNING:HDLCompiler:189 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_top.v" Line 103: Size mismatch in connection of port <rgmii_txd>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_top.v" Line 103: Assignment to eth_txd ignored, since the identifier is never used
+
+Elaborating module <arp(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010,DES_MAC=48'b111111111111111111111111111111111111111111111111,DES_IP=32'b11000000101010000000000101100110)>.
+
+Elaborating module <arp_rx(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010)>.
+
+Elaborating module <arp_tx(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010,DES_MAC=48'b111111111111111111111111111111111111111111111111,DES_IP=32'b11000000101010000000000101100110)>.
+
+Elaborating module <crc32_d8>.
+
+Elaborating module <udp(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010,DES_MAC=48'b111111111111111111111111111111111111111111111111,DES_IP=32'b11000000101010000000000101100110)>.
+
+Elaborating module <udp_rx(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010)>.
+WARNING:HDLCompiler:1127 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_rx.v" Line 136: Assignment to ip_head_byte_num ignored, since the identifier is never used
+
+Elaborating module <udp_tx(BOARD_MAC=48'b01000100100010001100110100010001010101,BOARD_IP=32'b11000000101010000000000100001010,DES_MAC=48'b111111111111111111111111111111111111111111111111,DES_IP=32'b11000000101010000000000101100110)>.
+WARNING:HDLCompiler:413 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_tx.v" Line 353: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_tx.v" Line 377: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <eth_ctrl>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <eth_top>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_top.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+        DES_MAC = 48'b111111111111111111111111111111111111111111111111
+        DES_IP = 32'b11000000101010000000000101100110
+        IDELAY_VALUE = 0
+INFO:Xst:3210 - "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_top.v" line 88: Output port <rgmii_txd> of the instance <u_gmii_to_rgmii> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <eth_top> synthesized.
+
+Synthesizing Unit <gmii_to_rgmii>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\gmii_to_rgmii.v".
+    Summary:
+	no macro.
+Unit <gmii_to_rgmii> synthesized.
+
+Synthesizing Unit <rgmii_rx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\rgmii_rx.v".
+    Found 8-bit register for signal <gmii_rxd>.
+    Found 1-bit register for signal <gmii_rx_dv>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <rgmii_rx> synthesized.
+
+Synthesizing Unit <rgmii_tx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\gmii_to_rgmii\gmii_to_rgmii\rgmii_tx.v".
+    Summary:
+	no macro.
+Unit <rgmii_tx> synthesized.
+
+Synthesizing Unit <arp>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+        DES_MAC = 48'b111111111111111111111111111111111111111111111111
+        DES_IP = 32'b11000000101010000000000101100110
+    Summary:
+	no macro.
+Unit <arp> synthesized.
+
+Synthesizing Unit <arp_rx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp_rx.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+    Found 5-bit register for signal <cnt>.
+    Found 48-bit register for signal <des_mac_t>.
+    Found 48-bit register for signal <src_mac_t>.
+    Found 48-bit register for signal <src_mac>.
+    Found 32-bit register for signal <des_ip_t>.
+    Found 32-bit register for signal <src_ip_t>.
+    Found 32-bit register for signal <src_ip>.
+    Found 16-bit register for signal <eth_type>.
+    Found 16-bit register for signal <op_data>.
+    Found 5-bit register for signal <cur_state>.
+    Found 1-bit register for signal <skip_en>.
+    Found 1-bit register for signal <error_en>.
+    Found 1-bit register for signal <arp_rx_done>.
+    Found 1-bit register for signal <arp_rx_type>.
+    Found finite state machine <FSM_0> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <cnt[4]_GND_10_o_add_26_OUT> created at line 148.
+    Found 5-bit comparator greater for signal <cnt[4]_GND_10_o_LessThan_28_o> created at line 149
+    Found 5-bit comparator lessequal for signal <n0079> created at line 194
+    Found 5-bit comparator greater for signal <cnt[4]_GND_10_o_LessThan_51_o> created at line 194
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_10_o_LessThan_53_o> created at line 196
+    Found 5-bit comparator lessequal for signal <n0087> created at line 198
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_10_o_LessThan_55_o> created at line 198
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 281 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  80 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <arp_rx> synthesized.
+
+Synthesizing Unit <arp_tx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\arp_tx.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+        DES_MAC = 48'b111111111111111111111111111111111111111111111111
+        DES_IP = 32'b11000000101010000000000101100110
+WARNING:Xst:647 - Input <crc_data<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <crc_clr> equivalent to <tx_done> has been removed
+    Found 1-bit register for signal <eth_head<5><7>>.
+    Found 1-bit register for signal <eth_head<5><6>>.
+    Found 1-bit register for signal <eth_head<5><5>>.
+    Found 1-bit register for signal <eth_head<5><4>>.
+    Found 1-bit register for signal <eth_head<5><3>>.
+    Found 1-bit register for signal <eth_head<5><2>>.
+    Found 1-bit register for signal <eth_head<5><1>>.
+    Found 1-bit register for signal <eth_head<5><0>>.
+    Found 1-bit register for signal <eth_head<4><7>>.
+    Found 1-bit register for signal <eth_head<4><6>>.
+    Found 1-bit register for signal <eth_head<4><5>>.
+    Found 1-bit register for signal <eth_head<4><4>>.
+    Found 1-bit register for signal <eth_head<4><3>>.
+    Found 1-bit register for signal <eth_head<4><2>>.
+    Found 1-bit register for signal <eth_head<4><1>>.
+    Found 1-bit register for signal <eth_head<4><0>>.
+    Found 1-bit register for signal <eth_head<3><7>>.
+    Found 1-bit register for signal <eth_head<3><6>>.
+    Found 1-bit register for signal <eth_head<3><5>>.
+    Found 1-bit register for signal <eth_head<3><4>>.
+    Found 1-bit register for signal <eth_head<3><3>>.
+    Found 1-bit register for signal <eth_head<3><2>>.
+    Found 1-bit register for signal <eth_head<3><1>>.
+    Found 1-bit register for signal <eth_head<3><0>>.
+    Found 1-bit register for signal <eth_head<2><7>>.
+    Found 1-bit register for signal <eth_head<2><6>>.
+    Found 1-bit register for signal <eth_head<2><5>>.
+    Found 1-bit register for signal <eth_head<2><4>>.
+    Found 1-bit register for signal <eth_head<2><3>>.
+    Found 1-bit register for signal <eth_head<2><2>>.
+    Found 1-bit register for signal <eth_head<2><1>>.
+    Found 1-bit register for signal <eth_head<2><0>>.
+    Found 1-bit register for signal <eth_head<1><7>>.
+    Found 1-bit register for signal <eth_head<1><6>>.
+    Found 1-bit register for signal <eth_head<1><5>>.
+    Found 1-bit register for signal <eth_head<1><4>>.
+    Found 1-bit register for signal <eth_head<1><3>>.
+    Found 1-bit register for signal <eth_head<1><2>>.
+    Found 1-bit register for signal <eth_head<1><1>>.
+    Found 1-bit register for signal <eth_head<1><0>>.
+    Found 1-bit register for signal <eth_head<0><7>>.
+    Found 1-bit register for signal <eth_head<0><6>>.
+    Found 1-bit register for signal <eth_head<0><5>>.
+    Found 1-bit register for signal <eth_head<0><4>>.
+    Found 1-bit register for signal <eth_head<0><3>>.
+    Found 1-bit register for signal <eth_head<0><2>>.
+    Found 1-bit register for signal <eth_head<0><1>>.
+    Found 1-bit register for signal <eth_head<0><0>>.
+    Found 1-bit register for signal <arp_data<27><6>>.
+    Found 1-bit register for signal <arp_data<27><5>>.
+    Found 1-bit register for signal <arp_data<27><2>>.
+    Found 1-bit register for signal <arp_data<27><1>>.
+    Found 1-bit register for signal <arp_data<26><0>>.
+    Found 1-bit register for signal <arp_data<25><7>>.
+    Found 1-bit register for signal <arp_data<25><5>>.
+    Found 1-bit register for signal <arp_data<25><3>>.
+    Found 1-bit register for signal <arp_data<24><7>>.
+    Found 1-bit register for signal <arp_data<24><6>>.
+    Found 1-bit register for signal <arp_data<23><7>>.
+    Found 1-bit register for signal <arp_data<23><6>>.
+    Found 1-bit register for signal <arp_data<23><5>>.
+    Found 1-bit register for signal <arp_data<23><4>>.
+    Found 1-bit register for signal <arp_data<23><3>>.
+    Found 1-bit register for signal <arp_data<23><2>>.
+    Found 1-bit register for signal <arp_data<23><1>>.
+    Found 1-bit register for signal <arp_data<23><0>>.
+    Found 1-bit register for signal <arp_data<22><7>>.
+    Found 1-bit register for signal <arp_data<22><6>>.
+    Found 1-bit register for signal <arp_data<22><5>>.
+    Found 1-bit register for signal <arp_data<22><4>>.
+    Found 1-bit register for signal <arp_data<22><3>>.
+    Found 1-bit register for signal <arp_data<22><2>>.
+    Found 1-bit register for signal <arp_data<22><1>>.
+    Found 1-bit register for signal <arp_data<22><0>>.
+    Found 1-bit register for signal <arp_data<21><7>>.
+    Found 1-bit register for signal <arp_data<21><6>>.
+    Found 1-bit register for signal <arp_data<21><5>>.
+    Found 1-bit register for signal <arp_data<21><4>>.
+    Found 1-bit register for signal <arp_data<21><3>>.
+    Found 1-bit register for signal <arp_data<21><2>>.
+    Found 1-bit register for signal <arp_data<21><1>>.
+    Found 1-bit register for signal <arp_data<21><0>>.
+    Found 1-bit register for signal <arp_data<20><7>>.
+    Found 1-bit register for signal <arp_data<20><6>>.
+    Found 1-bit register for signal <arp_data<20><5>>.
+    Found 1-bit register for signal <arp_data<20><4>>.
+    Found 1-bit register for signal <arp_data<20><3>>.
+    Found 1-bit register for signal <arp_data<20><2>>.
+    Found 1-bit register for signal <arp_data<20><1>>.
+    Found 1-bit register for signal <arp_data<20><0>>.
+    Found 1-bit register for signal <arp_data<19><7>>.
+    Found 1-bit register for signal <arp_data<19><6>>.
+    Found 1-bit register for signal <arp_data<19><5>>.
+    Found 1-bit register for signal <arp_data<19><4>>.
+    Found 1-bit register for signal <arp_data<19><3>>.
+    Found 1-bit register for signal <arp_data<19><2>>.
+    Found 1-bit register for signal <arp_data<19><1>>.
+    Found 1-bit register for signal <arp_data<19><0>>.
+    Found 1-bit register for signal <arp_data<18><7>>.
+    Found 1-bit register for signal <arp_data<18><6>>.
+    Found 1-bit register for signal <arp_data<18><5>>.
+    Found 1-bit register for signal <arp_data<18><4>>.
+    Found 1-bit register for signal <arp_data<18><3>>.
+    Found 1-bit register for signal <arp_data<18><2>>.
+    Found 1-bit register for signal <arp_data<18><1>>.
+    Found 1-bit register for signal <arp_data<18><0>>.
+    Found 1-bit register for signal <arp_data<7><0>>.
+    Found 6-bit register for signal <cnt>.
+    Found 5-bit register for signal <data_cnt>.
+    Found 8-bit register for signal <gmii_txd>.
+    Found 5-bit register for signal <cur_state>.
+    Found 1-bit register for signal <tx_en_d1>.
+    Found 1-bit register for signal <tx_en_d2>.
+    Found 1-bit register for signal <skip_en>.
+    Found 1-bit register for signal <crc_en>.
+    Found 1-bit register for signal <gmii_tx_en>.
+    Found 1-bit register for signal <tx_done_t>.
+    Found 1-bit register for signal <arp_data<27><7>>.
+    Found 1-bit register for signal <arp_data<27><4>>.
+    Found 1-bit register for signal <arp_data<27><3>>.
+    Found 1-bit register for signal <arp_data<27><0>>.
+    Found 1-bit register for signal <arp_data<26><7>>.
+    Found 1-bit register for signal <arp_data<26><6>>.
+    Found 1-bit register for signal <arp_data<26><5>>.
+    Found 1-bit register for signal <arp_data<26><4>>.
+    Found 1-bit register for signal <arp_data<26><3>>.
+    Found 1-bit register for signal <arp_data<26><2>>.
+    Found 1-bit register for signal <arp_data<26><1>>.
+    Found 1-bit register for signal <arp_data<25><6>>.
+    Found 1-bit register for signal <arp_data<25><4>>.
+    Found 1-bit register for signal <arp_data<25><2>>.
+    Found 1-bit register for signal <arp_data<25><1>>.
+    Found 1-bit register for signal <arp_data<25><0>>.
+    Found 1-bit register for signal <arp_data<24><5>>.
+    Found 1-bit register for signal <arp_data<24><4>>.
+    Found 1-bit register for signal <arp_data<24><3>>.
+    Found 1-bit register for signal <arp_data<24><2>>.
+    Found 1-bit register for signal <arp_data<24><1>>.
+    Found 1-bit register for signal <arp_data<24><0>>.
+    Found 1-bit register for signal <arp_data<7><7>>.
+    Found 1-bit register for signal <arp_data<7><6>>.
+    Found 1-bit register for signal <arp_data<7><5>>.
+    Found 1-bit register for signal <arp_data<7><4>>.
+    Found 1-bit register for signal <arp_data<7><3>>.
+    Found 1-bit register for signal <arp_data<7><2>>.
+    Found 1-bit register for signal <arp_data<7><1>>.
+    Found 1-bit register for signal <tx_done>.
+    Found 1-bit register for signal <tx_en_d0>.
+    Found finite state machine <FSM_1> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <cnt[5]_GND_12_o_add_18_OUT> created at line 255.
+    Found 5-bit adder for signal <data_cnt[4]_GND_12_o_add_29_OUT> created at line 280.
+    Found 8x8-bit Read Only RAM for signal <cnt[2]_preamble[7][7]_wide_mux_16_OUT>
+    Found 8-bit 4-to-1 multiplexer for signal <_n1021> created at line 292.
+    Found 5-bit comparator greater for signal <n0299> created at line 279
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 157 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <arp_tx> synthesized.
+
+Synthesizing Unit <crc32_d8>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\arp\crc32_d8.v".
+    Found 32-bit register for signal <crc_data>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <crc32_d8> synthesized.
+
+Synthesizing Unit <udp>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+        DES_MAC = 48'b111111111111111111111111111111111111111111111111
+        DES_IP = 32'b11000000101010000000000101100110
+    Summary:
+	no macro.
+Unit <udp> synthesized.
+
+Synthesizing Unit <udp_rx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_rx.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+    Found 5-bit register for signal <cnt>.
+    Found 48-bit register for signal <des_mac>.
+    Found 16-bit register for signal <eth_type>.
+    Found 16-bit register for signal <udp_byte_num>.
+    Found 16-bit register for signal <data_byte_num>.
+    Found 16-bit register for signal <data_cnt>.
+    Found 16-bit register for signal <rec_byte_num>.
+    Found 32-bit register for signal <des_ip>.
+    Found 8-bit register for signal <rec_data>.
+    Found 7-bit register for signal <cur_state>.
+    Found 1-bit register for signal <skip_en>.
+    Found 1-bit register for signal <error_en>.
+    Found 1-bit register for signal <rec_en>.
+    Found 1-bit register for signal <rec_pkt_done>.
+    Found finite state machine <FSM_2> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 14                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000001                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit subtractor for signal <udp_byte_num[15]_GND_281_o_sub_74_OUT> created at line 234.
+    Found 16-bit subtractor for signal <data_byte_num[15]_GND_281_o_sub_86_OUT> created at line 246.
+    Found 5-bit adder for signal <cnt[4]_GND_281_o_add_22_OUT> created at line 164.
+    Found 16-bit adder for signal <data_cnt[15]_GND_281_o_add_84_OUT> created at line 243.
+    Found 5-bit comparator greater for signal <cnt[4]_GND_281_o_LessThan_32_o> created at line 165
+    Found 5-bit comparator lessequal for signal <n0082> created at line 207
+    Found 5-bit comparator lessequal for signal <n0084> created at line 207
+    Found 16-bit comparator equal for signal <data_cnt[15]_data_byte_num[15]_equal_87_o> created at line 246
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 177 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  65 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <udp_rx> synthesized.
+
+Synthesizing Unit <udp_tx>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\udp\udp_tx.v".
+        BOARD_MAC = 48'b000000000001000100100010001100110100010001010101
+        BOARD_IP = 32'b11000000101010000000000100001010
+        DES_MAC = 48'b111111111111111111111111111111111111111111111111
+        DES_IP = 32'b11000000101010000000000101100110
+WARNING:Xst:647 - Input <crc_data<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <crc_clr> equivalent to <tx_done> has been removed
+    Found 1-bit register for signal <eth_head<5><7>>.
+    Found 1-bit register for signal <eth_head<5><6>>.
+    Found 1-bit register for signal <eth_head<5><5>>.
+    Found 1-bit register for signal <eth_head<5><4>>.
+    Found 1-bit register for signal <eth_head<5><3>>.
+    Found 1-bit register for signal <eth_head<5><2>>.
+    Found 1-bit register for signal <eth_head<5><1>>.
+    Found 1-bit register for signal <eth_head<5><0>>.
+    Found 1-bit register for signal <eth_head<4><7>>.
+    Found 1-bit register for signal <eth_head<4><6>>.
+    Found 1-bit register for signal <eth_head<4><5>>.
+    Found 1-bit register for signal <eth_head<4><4>>.
+    Found 1-bit register for signal <eth_head<4><3>>.
+    Found 1-bit register for signal <eth_head<4><2>>.
+    Found 1-bit register for signal <eth_head<4><1>>.
+    Found 1-bit register for signal <eth_head<4><0>>.
+    Found 1-bit register for signal <eth_head<3><7>>.
+    Found 1-bit register for signal <eth_head<3><6>>.
+    Found 1-bit register for signal <eth_head<3><5>>.
+    Found 1-bit register for signal <eth_head<3><4>>.
+    Found 1-bit register for signal <eth_head<3><3>>.
+    Found 1-bit register for signal <eth_head<3><2>>.
+    Found 1-bit register for signal <eth_head<3><1>>.
+    Found 1-bit register for signal <eth_head<3><0>>.
+    Found 1-bit register for signal <eth_head<2><7>>.
+    Found 1-bit register for signal <eth_head<2><6>>.
+    Found 1-bit register for signal <eth_head<2><5>>.
+    Found 1-bit register for signal <eth_head<2><4>>.
+    Found 1-bit register for signal <eth_head<2><3>>.
+    Found 1-bit register for signal <eth_head<2><2>>.
+    Found 1-bit register for signal <eth_head<2><1>>.
+    Found 1-bit register for signal <eth_head<2><0>>.
+    Found 1-bit register for signal <eth_head<1><7>>.
+    Found 1-bit register for signal <eth_head<1><6>>.
+    Found 1-bit register for signal <eth_head<1><5>>.
+    Found 1-bit register for signal <eth_head<1><4>>.
+    Found 1-bit register for signal <eth_head<1><3>>.
+    Found 1-bit register for signal <eth_head<1><2>>.
+    Found 1-bit register for signal <eth_head<1><1>>.
+    Found 1-bit register for signal <eth_head<1><0>>.
+    Found 1-bit register for signal <eth_head<0><7>>.
+    Found 1-bit register for signal <eth_head<0><6>>.
+    Found 1-bit register for signal <eth_head<0><5>>.
+    Found 1-bit register for signal <eth_head<0><4>>.
+    Found 1-bit register for signal <eth_head<0><3>>.
+    Found 1-bit register for signal <eth_head<0><2>>.
+    Found 1-bit register for signal <eth_head<0><1>>.
+    Found 1-bit register for signal <eth_head<0><0>>.
+    Found 16-bit register for signal <tx_data_num>.
+    Found 16-bit register for signal <total_num>.
+    Found 16-bit register for signal <udp_num>.
+    Found 16-bit register for signal <data_cnt>.
+    Found 5-bit register for signal <cnt>.
+    Found 5-bit register for signal <real_add_cnt>.
+    Found 32-bit register for signal <check_buffer>.
+    Found 2-bit register for signal <tx_bit_sel>.
+    Found 8-bit register for signal <gmii_txd>.
+    Found 7-bit register for signal <cur_state>.
+    Found 1-bit register for signal <start_en_d1>.
+    Found 1-bit register for signal <start_en_d2>.
+    Found 1-bit register for signal <trig_tx_en>.
+    Found 1-bit register for signal <skip_en>.
+    Found 1-bit register for signal <ip_head<1><31>>.
+    Found 1-bit register for signal <ip_head<1><30>>.
+    Found 1-bit register for signal <ip_head<1><29>>.
+    Found 1-bit register for signal <ip_head<1><28>>.
+    Found 1-bit register for signal <ip_head<1><27>>.
+    Found 1-bit register for signal <ip_head<1><26>>.
+    Found 1-bit register for signal <ip_head<1><25>>.
+    Found 1-bit register for signal <ip_head<1><24>>.
+    Found 1-bit register for signal <ip_head<1><23>>.
+    Found 1-bit register for signal <ip_head<1><22>>.
+    Found 1-bit register for signal <ip_head<1><21>>.
+    Found 1-bit register for signal <ip_head<1><20>>.
+    Found 1-bit register for signal <ip_head<1><19>>.
+    Found 1-bit register for signal <ip_head<1><18>>.
+    Found 1-bit register for signal <ip_head<1><17>>.
+    Found 1-bit register for signal <ip_head<1><16>>.
+    Found 1-bit register for signal <crc_en>.
+    Found 1-bit register for signal <gmii_tx_en>.
+    Found 1-bit register for signal <tx_req>.
+    Found 1-bit register for signal <tx_done_t>.
+    Found 1-bit register for signal <tx_done>.
+    Found 1-bit register for signal <start_en_d0>.
+    Found 1-bit register for signal <ip_head<6><31>>.
+    Found 1-bit register for signal <ip_head<6><30>>.
+    Found 1-bit register for signal <ip_head<6><29>>.
+    Found 1-bit register for signal <ip_head<6><28>>.
+    Found 1-bit register for signal <ip_head<6><27>>.
+    Found 1-bit register for signal <ip_head<6><26>>.
+    Found 1-bit register for signal <ip_head<6><25>>.
+    Found 1-bit register for signal <ip_head<6><24>>.
+    Found 1-bit register for signal <ip_head<6><23>>.
+    Found 1-bit register for signal <ip_head<6><22>>.
+    Found 1-bit register for signal <ip_head<6><21>>.
+    Found 1-bit register for signal <ip_head<6><20>>.
+    Found 1-bit register for signal <ip_head<6><19>>.
+    Found 1-bit register for signal <ip_head<6><18>>.
+    Found 1-bit register for signal <ip_head<6><17>>.
+    Found 1-bit register for signal <ip_head<6><16>>.
+    Found 1-bit register for signal <ip_head<6><15>>.
+    Found 1-bit register for signal <ip_head<6><14>>.
+    Found 1-bit register for signal <ip_head<6><13>>.
+    Found 1-bit register for signal <ip_head<6><12>>.
+    Found 1-bit register for signal <ip_head<6><11>>.
+    Found 1-bit register for signal <ip_head<6><10>>.
+    Found 1-bit register for signal <ip_head<6><9>>.
+    Found 1-bit register for signal <ip_head<6><8>>.
+    Found 1-bit register for signal <ip_head<6><7>>.
+    Found 1-bit register for signal <ip_head<6><6>>.
+    Found 1-bit register for signal <ip_head<6><5>>.
+    Found 1-bit register for signal <ip_head<6><4>>.
+    Found 1-bit register for signal <ip_head<6><3>>.
+    Found 1-bit register for signal <ip_head<6><2>>.
+    Found 1-bit register for signal <ip_head<6><1>>.
+    Found 1-bit register for signal <ip_head<6><0>>.
+    Found 1-bit register for signal <ip_head<5><31>>.
+    Found 1-bit register for signal <ip_head<5><30>>.
+    Found 1-bit register for signal <ip_head<5><29>>.
+    Found 1-bit register for signal <ip_head<5><28>>.
+    Found 1-bit register for signal <ip_head<5><27>>.
+    Found 1-bit register for signal <ip_head<5><26>>.
+    Found 1-bit register for signal <ip_head<5><25>>.
+    Found 1-bit register for signal <ip_head<5><24>>.
+    Found 1-bit register for signal <ip_head<5><23>>.
+    Found 1-bit register for signal <ip_head<5><22>>.
+    Found 1-bit register for signal <ip_head<5><21>>.
+    Found 1-bit register for signal <ip_head<5><20>>.
+    Found 1-bit register for signal <ip_head<5><19>>.
+    Found 1-bit register for signal <ip_head<5><18>>.
+    Found 1-bit register for signal <ip_head<5><17>>.
+    Found 1-bit register for signal <ip_head<5><16>>.
+    Found 1-bit register for signal <ip_head<5><15>>.
+    Found 1-bit register for signal <ip_head<5><14>>.
+    Found 1-bit register for signal <ip_head<5><13>>.
+    Found 1-bit register for signal <ip_head<5><12>>.
+    Found 1-bit register for signal <ip_head<5><11>>.
+    Found 1-bit register for signal <ip_head<5><10>>.
+    Found 1-bit register for signal <ip_head<5><9>>.
+    Found 1-bit register for signal <ip_head<5><8>>.
+    Found 1-bit register for signal <ip_head<5><7>>.
+    Found 1-bit register for signal <ip_head<5><6>>.
+    Found 1-bit register for signal <ip_head<5><5>>.
+    Found 1-bit register for signal <ip_head<5><4>>.
+    Found 1-bit register for signal <ip_head<5><3>>.
+    Found 1-bit register for signal <ip_head<5><2>>.
+    Found 1-bit register for signal <ip_head<5><1>>.
+    Found 1-bit register for signal <ip_head<5><0>>.
+    Found 1-bit register for signal <ip_head<4><31>>.
+    Found 1-bit register for signal <ip_head<4><30>>.
+    Found 1-bit register for signal <ip_head<4><29>>.
+    Found 1-bit register for signal <ip_head<4><28>>.
+    Found 1-bit register for signal <ip_head<4><27>>.
+    Found 1-bit register for signal <ip_head<4><26>>.
+    Found 1-bit register for signal <ip_head<4><25>>.
+    Found 1-bit register for signal <ip_head<4><24>>.
+    Found 1-bit register for signal <ip_head<4><23>>.
+    Found 1-bit register for signal <ip_head<4><22>>.
+    Found 1-bit register for signal <ip_head<4><21>>.
+    Found 1-bit register for signal <ip_head<4><20>>.
+    Found 1-bit register for signal <ip_head<4><19>>.
+    Found 1-bit register for signal <ip_head<4><18>>.
+    Found 1-bit register for signal <ip_head<4><17>>.
+    Found 1-bit register for signal <ip_head<4><16>>.
+    Found 1-bit register for signal <ip_head<4><15>>.
+    Found 1-bit register for signal <ip_head<4><14>>.
+    Found 1-bit register for signal <ip_head<4><13>>.
+    Found 1-bit register for signal <ip_head<4><12>>.
+    Found 1-bit register for signal <ip_head<4><11>>.
+    Found 1-bit register for signal <ip_head<4><10>>.
+    Found 1-bit register for signal <ip_head<4><9>>.
+    Found 1-bit register for signal <ip_head<4><8>>.
+    Found 1-bit register for signal <ip_head<4><7>>.
+    Found 1-bit register for signal <ip_head<4><6>>.
+    Found 1-bit register for signal <ip_head<4><5>>.
+    Found 1-bit register for signal <ip_head<4><4>>.
+    Found 1-bit register for signal <ip_head<4><3>>.
+    Found 1-bit register for signal <ip_head<4><2>>.
+    Found 1-bit register for signal <ip_head<4><1>>.
+    Found 1-bit register for signal <ip_head<4><0>>.
+    Found 1-bit register for signal <ip_head<3><31>>.
+    Found 1-bit register for signal <ip_head<3><30>>.
+    Found 1-bit register for signal <ip_head<3><29>>.
+    Found 1-bit register for signal <ip_head<3><28>>.
+    Found 1-bit register for signal <ip_head<3><27>>.
+    Found 1-bit register for signal <ip_head<3><26>>.
+    Found 1-bit register for signal <ip_head<3><25>>.
+    Found 1-bit register for signal <ip_head<3><24>>.
+    Found 1-bit register for signal <ip_head<3><23>>.
+    Found 1-bit register for signal <ip_head<3><22>>.
+    Found 1-bit register for signal <ip_head<3><21>>.
+    Found 1-bit register for signal <ip_head<3><20>>.
+    Found 1-bit register for signal <ip_head<3><19>>.
+    Found 1-bit register for signal <ip_head<3><18>>.
+    Found 1-bit register for signal <ip_head<3><17>>.
+    Found 1-bit register for signal <ip_head<3><16>>.
+    Found 1-bit register for signal <ip_head<3><15>>.
+    Found 1-bit register for signal <ip_head<3><14>>.
+    Found 1-bit register for signal <ip_head<3><13>>.
+    Found 1-bit register for signal <ip_head<3><12>>.
+    Found 1-bit register for signal <ip_head<3><11>>.
+    Found 1-bit register for signal <ip_head<3><10>>.
+    Found 1-bit register for signal <ip_head<3><9>>.
+    Found 1-bit register for signal <ip_head<3><8>>.
+    Found 1-bit register for signal <ip_head<3><7>>.
+    Found 1-bit register for signal <ip_head<3><6>>.
+    Found 1-bit register for signal <ip_head<3><5>>.
+    Found 1-bit register for signal <ip_head<3><4>>.
+    Found 1-bit register for signal <ip_head<3><3>>.
+    Found 1-bit register for signal <ip_head<3><2>>.
+    Found 1-bit register for signal <ip_head<3><1>>.
+    Found 1-bit register for signal <ip_head<3><0>>.
+    Found 1-bit register for signal <ip_head<2><31>>.
+    Found 1-bit register for signal <ip_head<2><30>>.
+    Found 1-bit register for signal <ip_head<2><29>>.
+    Found 1-bit register for signal <ip_head<2><28>>.
+    Found 1-bit register for signal <ip_head<2><27>>.
+    Found 1-bit register for signal <ip_head<2><26>>.
+    Found 1-bit register for signal <ip_head<2><25>>.
+    Found 1-bit register for signal <ip_head<2><24>>.
+    Found 1-bit register for signal <ip_head<2><23>>.
+    Found 1-bit register for signal <ip_head<2><22>>.
+    Found 1-bit register for signal <ip_head<2><21>>.
+    Found 1-bit register for signal <ip_head<2><20>>.
+    Found 1-bit register for signal <ip_head<2><19>>.
+    Found 1-bit register for signal <ip_head<2><18>>.
+    Found 1-bit register for signal <ip_head<2><17>>.
+    Found 1-bit register for signal <ip_head<2><16>>.
+    Found 1-bit register for signal <ip_head<2><15>>.
+    Found 1-bit register for signal <ip_head<2><14>>.
+    Found 1-bit register for signal <ip_head<2><13>>.
+    Found 1-bit register for signal <ip_head<2><12>>.
+    Found 1-bit register for signal <ip_head<2><11>>.
+    Found 1-bit register for signal <ip_head<2><10>>.
+    Found 1-bit register for signal <ip_head<2><9>>.
+    Found 1-bit register for signal <ip_head<2><8>>.
+    Found 1-bit register for signal <ip_head<2><7>>.
+    Found 1-bit register for signal <ip_head<2><6>>.
+    Found 1-bit register for signal <ip_head<2><5>>.
+    Found 1-bit register for signal <ip_head<2><4>>.
+    Found 1-bit register for signal <ip_head<2><3>>.
+    Found 1-bit register for signal <ip_head<2><2>>.
+    Found 1-bit register for signal <ip_head<2><1>>.
+    Found 1-bit register for signal <ip_head<2><0>>.
+    Found 1-bit register for signal <ip_head<1><15>>.
+    Found 1-bit register for signal <ip_head<1><14>>.
+    Found 1-bit register for signal <ip_head<1><13>>.
+    Found 1-bit register for signal <ip_head<1><12>>.
+    Found 1-bit register for signal <ip_head<1><11>>.
+    Found 1-bit register for signal <ip_head<1><10>>.
+    Found 1-bit register for signal <ip_head<1><9>>.
+    Found 1-bit register for signal <ip_head<1><8>>.
+    Found 1-bit register for signal <ip_head<1><7>>.
+    Found 1-bit register for signal <ip_head<1><6>>.
+    Found 1-bit register for signal <ip_head<1><5>>.
+    Found 1-bit register for signal <ip_head<1><4>>.
+    Found 1-bit register for signal <ip_head<1><3>>.
+    Found 1-bit register for signal <ip_head<1><2>>.
+    Found 1-bit register for signal <ip_head<1><1>>.
+    Found 1-bit register for signal <ip_head<1><0>>.
+    Found 1-bit register for signal <ip_head<0><31>>.
+    Found 1-bit register for signal <ip_head<0><30>>.
+    Found 1-bit register for signal <ip_head<0><29>>.
+    Found 1-bit register for signal <ip_head<0><28>>.
+    Found 1-bit register for signal <ip_head<0><27>>.
+    Found 1-bit register for signal <ip_head<0><26>>.
+    Found 1-bit register for signal <ip_head<0><25>>.
+    Found 1-bit register for signal <ip_head<0><24>>.
+    Found 1-bit register for signal <ip_head<0><23>>.
+    Found 1-bit register for signal <ip_head<0><22>>.
+    Found 1-bit register for signal <ip_head<0><21>>.
+    Found 1-bit register for signal <ip_head<0><20>>.
+    Found 1-bit register for signal <ip_head<0><19>>.
+    Found 1-bit register for signal <ip_head<0><18>>.
+    Found 1-bit register for signal <ip_head<0><17>>.
+    Found 1-bit register for signal <ip_head<0><16>>.
+    Found 1-bit register for signal <ip_head<0><15>>.
+    Found 1-bit register for signal <ip_head<0><14>>.
+    Found 1-bit register for signal <ip_head<0><13>>.
+    Found 1-bit register for signal <ip_head<0><12>>.
+    Found 1-bit register for signal <ip_head<0><11>>.
+    Found 1-bit register for signal <ip_head<0><10>>.
+    Found 1-bit register for signal <ip_head<0><9>>.
+    Found 1-bit register for signal <ip_head<0><8>>.
+    Found 1-bit register for signal <ip_head<0><7>>.
+    Found 1-bit register for signal <ip_head<0><6>>.
+    Found 1-bit register for signal <ip_head<0><5>>.
+    Found 1-bit register for signal <ip_head<0><4>>.
+    Found 1-bit register for signal <ip_head<0><3>>.
+    Found 1-bit register for signal <ip_head<0><2>>.
+    Found 1-bit register for signal <ip_head<0><1>>.
+    Found 1-bit register for signal <ip_head<0><0>>.
+    Found finite state machine <FSM_3> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 14                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000001                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit subtractor for signal <tx_data_num[15]_GND_283_o_sub_90_OUT> created at line 356.
+    Found 16-bit subtractor for signal <real_tx_data_num[15]_GND_283_o_sub_93_OUT> created at line 359.
+    Found 16-bit subtractor for signal <tx_data_num[15]_GND_283_o_sub_105_OUT> created at line 370.
+    Found 16-bit adder for signal <tx_byte_num[15]_GND_283_o_add_3_OUT> created at line 123.
+    Found 16-bit adder for signal <tx_byte_num[15]_GND_283_o_add_4_OUT> created at line 125.
+    Found 16-bit adder for signal <ip_head[1][31]_GND_283_o_add_28_OUT> created at line 251.
+    Found 5-bit adder for signal <cnt[4]_GND_283_o_add_32_OUT> created at line 282.
+    Found 17-bit adder for signal <n1259[16:0]> created at line 284.
+    Found 18-bit adder for signal <n1262[17:0]> created at line 284.
+    Found 19-bit adder for signal <n1265[18:0]> created at line 284.
+    Found 20-bit adder for signal <n1268[19:0]> created at line 284.
+    Found 21-bit adder for signal <n1271[20:0]> created at line 284.
+    Found 22-bit adder for signal <n1274[21:0]> created at line 284.
+    Found 23-bit adder for signal <n1277[22:0]> created at line 284.
+    Found 24-bit adder for signal <n1280[23:0]> created at line 284.
+    Found 25-bit adder for signal <n1283[24:0]> created at line 284.
+    Found 17-bit adder for signal <n1286[16:0]> created at line 293.
+    Found 2-bit adder for signal <tx_bit_sel[1]_GND_283_o_add_85_OUT> created at line 326.
+    Found 16-bit adder for signal <data_cnt[15]_GND_283_o_add_88_OUT> created at line 355.
+    Found 16-bit adder for signal <data_cnt[15]_GND_283_o_add_91_OUT> created at line 359.
+    Found 5-bit adder for signal <real_add_cnt[4]_GND_283_o_add_94_OUT> created at line 360.
+    Found 8x8-bit Read Only RAM for signal <cnt[2]_preamble[7][7]_wide_mux_56_OUT>
+    Found 8-bit 7-to-1 multiplexer for signal <cnt[2]_X_279_o_wide_mux_66_OUT> created at line 328.
+    Found 8-bit 7-to-1 multiplexer for signal <cnt[2]_X_279_o_wide_mux_68_OUT> created at line 330.
+    Found 8-bit 7-to-1 multiplexer for signal <cnt[2]_X_279_o_wide_mux_70_OUT> created at line 332.
+    Found 8-bit 7-to-1 multiplexer for signal <cnt[2]_X_279_o_wide_mux_73_OUT> created at line 339.
+    Found 8-bit 4-to-1 multiplexer for signal <gmii_txd[7]_cnt[2]_mux_83_OUT> created at line 329.
+    Found 8-bit 4-to-1 multiplexer for signal <gmii_txd[7]_crc_next[0]_mux_114_OUT> created at line 382.
+    Found 16-bit comparator lessequal for signal <n0002> created at line 94
+    Found 16-bit comparator greater for signal <data_cnt[15]_tx_data_num[15]_LessThan_88_o> created at line 354
+    Found 16-bit comparator equal for signal <data_cnt[15]_tx_data_num[15]_equal_91_o> created at line 356
+    Found 16-bit comparator greater for signal <data_cnt[15]_real_tx_data_num[15]_LessThan_94_o> created at line 359
+    Found 16-bit comparator equal for signal <data_cnt[15]_tx_data_num[15]_equal_106_o> created at line 370
+    Summary:
+	inferred   1 RAM(s).
+	inferred  21 Adder/Subtractor(s).
+	inferred 398 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  78 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <udp_tx> synthesized.
+
+Synthesizing Unit <eth_ctrl>.
+    Related source file is "D:\download1\fpga\ISE\ISE_pro\eth_udp_pc\rtl\eth_ctrl.v".
+WARNING:Xst:647 - Input <arp_tx_done> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <arp_rx_flag>.
+    Found 1-bit register for signal <protocol_sw>.
+    Found 1-bit register for signal <arp_tx_en>.
+    Found 1-bit register for signal <udp_tx_busy>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <eth_ctrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x8-bit single-port Read Only RAM                     : 2
+# Adders/Subtractors                                   : 28
+ 16-bit adder                                          : 6
+ 16-bit subtractor                                     : 5
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 5-bit adder                                           : 5
+ 6-bit adder                                           : 1
+# Registers                                            : 284
+ 1-bit register                                        : 225
+ 16-bit register                                       : 11
+ 2-bit register                                        : 1
+ 32-bit register                                       : 7
+ 48-bit register                                       : 4
+ 5-bit register                                        : 5
+ 6-bit register                                        : 1
+ 8-bit register                                        : 30
+# Comparators                                          : 16
+ 16-bit comparator equal                               : 3
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 1
+ 5-bit comparator greater                              : 6
+ 5-bit comparator lessequal                            : 4
+# Multiplexers                                         : 239
+ 1-bit 2-to-1 multiplexer                              : 158
+ 16-bit 2-to-1 multiplexer                             : 7
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 48-bit 2-to-1 multiplexer                             : 12
+ 5-bit 2-to-1 multiplexer                              : 39
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 7-to-1 multiplexer                              : 4
+# FSMs                                                 : 4
+# Xors                                                 : 108
+ 1-bit xor2                                            : 58
+ 1-bit xor3                                            : 28
+ 1-bit xor4                                            : 16
+ 1-bit xor5                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <eth_head_0_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_6> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_7> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_3> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_4> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_1> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_0> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_2> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_5> in Unit <u_arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_5> 
+WARNING:Xst:2677 - Node <des_ip_24> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_25> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_26> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_27> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_28> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_29> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_30> of sequential type is unconnected in block <u_udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_31> of sequential type is unconnected in block <u_udp_rx>.
+
+Synthesizing (advanced) Unit <arp_tx>.
+The following registers are absorbed into counter <data_cnt>: 1 register on signal <data_cnt>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cnt[2]_preamble[7][7]_wide_mux_16_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt<2:0>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <arp_tx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <udp_rx>.
+The following registers are absorbed into counter <data_cnt>: 1 register on signal <data_cnt>.
+Unit <udp_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <udp_tx>.
+The following registers are absorbed into counter <data_cnt>: 1 register on signal <data_cnt>.
+The following registers are absorbed into counter <real_add_cnt>: 1 register on signal <real_add_cnt>.
+	The following adders/subtractors are grouped into adder tree <Madd_n1283[24:0]1> :
+ 	<Madd_n1259[16:0]> in block <udp_tx>, 	<Madd_n1262[17:0]> in block <udp_tx>, 	<Madd_n1265[18:0]> in block <udp_tx>, 	<Madd_n1268[19:0]> in block <udp_tx>, 	<Madd_n1271[20:0]> in block <udp_tx>, 	<Madd_n1274[21:0]> in block <udp_tx>, 	<Madd_n1277[22:0]> in block <udp_tx>, 	<Madd_n1280[23:0]> in block <udp_tx>, 	<Madd_n1283[24:0]> in block <udp_tx>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_cnt[2]_preamble[7][7]_wide_mux_56_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt<2:0>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <udp_tx> synthesized (advanced).
+WARNING:Xst:2677 - Node <des_ip_24> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_25> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_26> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_27> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_28> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_29> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_30> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <des_ip_31> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_0> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_1> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_2> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_3> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_4> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_5> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_6> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_7> of sequential type is unconnected in block <udp_rx>.
+WARNING:Xst:2677 - Node <eth_type_0> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_1> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_2> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_3> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_4> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_5> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_6> of sequential type is unconnected in block <arp_rx>.
+WARNING:Xst:2677 - Node <eth_type_7> of sequential type is unconnected in block <arp_rx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x8-bit single-port distributed Read Only RAM         : 2
+# Adders/Subtractors                                   : 15
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 5
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 6-bit adder                                           : 1
+# Adder Trees                                          : 1
+ 25-bit / 10-inputs adder tree                         : 1
+# Counters                                             : 4
+ 16-bit up counter                                     : 2
+ 5-bit up counter                                      : 2
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Comparators                                          : 16
+ 16-bit comparator equal                               : 3
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 1
+ 5-bit comparator greater                              : 6
+ 5-bit comparator lessequal                            : 4
+# Multiplexers                                         : 247
+ 1-bit 2-to-1 multiplexer                              : 173
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 48-bit 2-to-1 multiplexer                             : 12
+ 5-bit 2-to-1 multiplexer                              : 37
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 7-to-1 multiplexer                              : 4
+# FSMs                                                 : 4
+# Xors                                                 : 108
+ 1-bit xor2                                            : 58
+ 1-bit xor3                                            : 28
+ 1-bit xor4                                            : 16
+ 1-bit xor5                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <eth_head_0_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_6> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_6> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_7> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_7> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_3_3> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_21_3> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_5_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_23_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_2_4> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_20_4> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_1> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_1> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_0> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_0> 
+INFO:Xst:2261 - The FF/Latch <eth_head_1_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_19_5> 
+INFO:Xst:2261 - The FF/Latch <eth_head_0_2> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_18_2> 
+INFO:Xst:2261 - The FF/Latch <eth_head_4_5> in Unit <arp_tx> is equivalent to the following FF/Latch, which will be removed : <arp_data_22_5> 
+WARNING:Xst:1710 - FF/Latch <ip_head_154> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_144> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_134> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_124> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_114> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_104> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_94> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_153> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_133> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_123> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_113> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_103> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_93> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_83> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_152> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_142> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_132> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_122> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_112> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_92> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_82> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_151> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_141> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_131> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_121> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_74> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_64> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_54> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_44> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_218> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_04> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_73> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_63> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_53> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_43> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_34> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_217> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_118> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_03> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_51> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_32> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_210> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_01> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_7> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_6> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_5> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_4> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_3> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_2> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_1> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_0> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_162> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_315> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_295> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_285> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_275> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_265> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_255> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_245> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_294> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_284> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_274> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_264> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_254> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_244> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_313> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_293> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_283> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_273> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_253> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_312> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_302> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_292> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_282> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_272> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_252> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_242> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_111> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_101> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_91> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_81> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_235> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_225> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_215> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_195> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_185> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_175> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_224> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_204> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_184> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_174> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_164> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_233> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_223> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_213> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_203> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_193> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_183> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_173> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_163> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_212> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_192> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_head_182> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_2> on signal <cur_state[1:7]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ 0000001 | 0000001
+ 0000010 | 0000010
+ 0000100 | 0000100
+ 0001000 | 0001000
+ 0010000 | 0010000
+ 0100000 | 0100000
+ 1000000 | 1000000
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <cur_state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 00001
+ 00010 | 00010
+ 00100 | 00100
+ 01000 | 01000
+ 10000 | 10000
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_udp/u_udp_tx/FSM_3> on signal <cur_state[1:7]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ 0000001 | 0000001
+ 0000010 | 0000010
+ 0000100 | 0000100
+ 0001000 | 0001000
+ 0010000 | 0010000
+ 0100000 | 0100000
+ 1000000 | 1000000
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_arp/u_arp_tx/FSM_1> on signal <cur_state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 00001
+ 00010 | 00010
+ 00100 | 00100
+ 01000 | 01000
+ 10000 | 10000
+-------------------
+WARNING:Xst:1710 - FF/Latch <check_buffer_20> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_21> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_22> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_23> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_24> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_25> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_26> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_27> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_28> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_29> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_30> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <check_buffer_31> (without init value) has a constant value of 0 in block <udp_tx>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <tx_data_num_0> in Unit <udp_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <total_num_0> <udp_num_0> 
+INFO:Xst:2261 - The FF/Latch <tx_data_num_1> in Unit <udp_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <total_num_1> <udp_num_1> 
+INFO:Xst:2261 - The FF/Latch <tx_data_num_2> in Unit <udp_tx> is equivalent to the following FF/Latch, which will be removed : <udp_num_2> 
+
+Optimizing unit <eth_top> ...
+
+Optimizing unit <rgmii_rx> ...
+
+Optimizing unit <udp_tx> ...
+
+Optimizing unit <arp_tx> ...
+
+Optimizing unit <eth_ctrl> ...
+WARNING:Xst:1710 - FF/Latch <u_udp/u_udp_tx/check_buffer_19> (without init value) has a constant value of 0 in block <eth_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <u_udp/u_udp_tx/ip_head_35> in Unit <eth_top> is equivalent to the following 24 FFs/Latches, which will be removed : <u_udp/u_udp_tx/ip_head_119> <u_udp/u_udp_tx/ip_head_71> <u_udp/u_udp_tx/ip_head_61> <u_udp/u_udp_tx/ip_head_41> <u_udp/u_udp_tx/ip_head_110> <u_udp/u_udp_tx/ip_head_84> <u_udp/u_udp_tx/ip_head_143> <u_udp/u_udp_tx/ip_head_102> <u_udp/u_udp_tx/ip_head_205> <u_udp/u_udp_tx/ip_head_165> <u_udp/u_udp_tx/ip_head_234> <u_udp/u_udp_tx/ip_head_214> <u_udp/u_udp_tx/ip_head_194> <u_udp/u_udp_tx/ip_head_232> <u_udp/u_udp_tx/ip_head_222> <u_udp/u_udp_tx/ip_head_202> <u_udp/u_udp_tx/ip_head_172> <u_udp/u_udp_tx/ip_head_305> <u_udp/u_udp_tx/ip_head_314> <u_udp/u_udp_tx/ip_head_304> <u_udp/u_udp_tx/ip_head_303> <u_udp/u_udp_tx/ip_head_263> <u_udp/u_udp_tx/ip_head_243> <u_udp/u_udp_tx/ip_head_262> 
+INFO:Xst:2261 - The FF/Latch <u_udp/u_udp_tx/ip_head_06> in Unit <eth_top> is equivalent to the following FF/Latch, which will be removed : <u_udp/u_udp_tx/ip_head_161> 
+INFO:Xst:2261 - The FF/Latch <u_udp/u_udp_tx/ip_head_127> in Unit <eth_top> is equivalent to the following FF/Latch, which will be removed : <u_udp/u_udp_tx/ip_head_171> 
+INFO:Xst:3203 - The FF/Latch <u_arp/u_arp_tx/arp_data_7_1> in Unit <eth_top> is the opposite to the following FF/Latch, which will be removed : <u_arp/u_arp_tx/arp_data_7_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block eth_top, actual ratio is 21.
+FlipFlop u_arp/u_arp_rx/cnt_1 has been replicated 2 time(s)
+FlipFlop u_arp/u_arp_rx/cnt_2 has been replicated 2 time(s)
+FlipFlop u_arp/u_arp_rx/cnt_3 has been replicated 2 time(s)
+FlipFlop u_arp/u_arp_rx/cnt_4 has been replicated 2 time(s)
+FlipFlop u_udp/u_udp_tx/cnt_0 has been replicated 1 time(s)
+FlipFlop u_udp/u_udp_tx/cnt_1 has been replicated 1 time(s)
+FlipFlop u_udp/u_udp_tx/cnt_2 has been replicated 1 time(s)
+FlipFlop u_udp/u_udp_tx/ip_head_35 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 907
+ Flip-Flops                                            : 907
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : eth_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2194
+#      GND                         : 1
+#      INV                         : 75
+#      LUT1                        : 86
+#      LUT2                        : 148
+#      LUT3                        : 233
+#      LUT4                        : 200
+#      LUT5                        : 256
+#      LUT6                        : 604
+#      MUXCY                       : 300
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 276
+# FlipFlops/Latches                : 918
+#      FD                          : 9
+#      FDC                         : 165
+#      FDCE                        : 478
+#      FDE                         : 81
+#      FDP                         : 4
+#      FDPE                        : 170
+#      IDDR2                       : 5
+#      ODDR2                       : 6
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 65
+#      IBUF                        : 31
+#      IBUFG                       : 1
+#      OBUF                        : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             918  out of  18224     5%  
+ Number of Slice LUTs:                 1602  out of   9112    17%  
+    Number used as Logic:              1602  out of   9112    17%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1896
+   Number with an unused Flip Flop:     978  out of   1896    51%  
+   Number with an unused LUT:           294  out of   1896    15%  
+   Number of fully used LUT-FF pairs:   624  out of   1896    32%  
+   Number of unique control sets:        25
+
+IO Utilization: 
+ Number of IOs:                          65
+ Number of bonded IOBs:                  65  out of    186    34%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+eth_rxc                            | IBUFG+BUFG             | 929   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.019ns (Maximum Frequency: 124.712MHz)
+   Minimum input arrival time before clock: 6.663ns
+   Maximum output required time after clock: 5.006ns
+   Maximum combinational path delay: 6.316ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'eth_rxc'
+  Clock period: 8.019ns (frequency: 124.712MHz)
+  Total number of paths / destination ports: 323584 / 1512
+-------------------------------------------------------------------------
+Delay:               8.019ns (Levels of Logic = 18)
+  Source:            u_udp/u_udp_tx/ip_head_35_1 (FF)
+  Destination:       u_udp/u_udp_tx/check_buffer_18 (FF)
+  Source Clock:      eth_rxc rising
+  Destination Clock: eth_rxc rising
+
+  Data Path: u_udp/u_udp_tx/ip_head_35_1 to u_udp/u_udp_tx/check_buffer_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.525   1.039  u_udp/u_udp_tx/ip_head_35_1 (u_udp/u_udp_tx/ip_head_35_1)
+     LUT2:I1->O            1   0.254   0.682  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd53 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd53)
+     LUT3:I2->O            1   0.254   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_lut<0>8 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_lut<0>8)
+     MUXCY:S->O            1   0.215   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_7 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_8 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_9 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_10 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_11 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_12 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>_13 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_cy<0>14)
+     XORCY:CI->O           2   0.206   0.726  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd5_xor<0>_14 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd_155)
+     LUT3:I2->O            1   0.254   0.682  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd715 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd715)
+     LUT2:I1->O            1   0.254   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd7_lut<0>16 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd7_lut<0>16)
+     MUXCY:S->O            1   0.215   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd7_cy<0>_15 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd7_cy<0>16)
+     XORCY:CI->O           1   0.206   0.682  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd7_xor<0>_16 (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd_177)
+     LUT2:I1->O            1   0.254   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd8_lut<17> (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd8_lut<17>)
+     MUXCY:S->O            0   0.215   0.000  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd8_cy<17> (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd8_cy<17>)
+     XORCY:CI->O           1   0.206   0.682  u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd8_xor<18> (u_udp/u_udp_tx/ADDERTREE_INTERNAL_Madd_188)
+     LUT3:I2->O            1   0.254   0.000  u_udp/u_udp_tx/Mmux__n1364101 (u_udp/u_udp_tx/_n1364<18>)
+     FDCE:D                    0.074          u_udp/u_udp_tx/check_buffer_18
+    ----------------------------------------
+    Total                      8.019ns (3.526ns logic, 4.493ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'eth_rxc'
+  Total number of paths / destination ports: 1127 / 958
+-------------------------------------------------------------------------
+Offset:              6.663ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       u_udp/u_crc32_d8/crc_data_31 (FF)
+  Destination Clock: eth_rxc rising
+
+  Data Path: sys_rst_n to u_udp/u_crc32_d8/crc_data_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            83   1.328   2.076  sys_rst_n_IBUF (eth_rst_n_OBUF)
+     INV:I->O            817   0.255   2.544  eth_rst_n_inv1_INV_0 (eth_rst_n_inv)
+     FDCE:CLR                  0.459          u_udp/u_udp_rx/data_cnt_0
+    ----------------------------------------
+    Total                      6.663ns (2.042ns logic, 4.621ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'eth_rxc'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              5.006ns (Levels of Logic = 1)
+  Source:            u_udp/u_udp_tx/tx_done (FF)
+  Destination:       udp_tx_done (PAD)
+  Source Clock:      eth_rxc rising
+
+  Data Path: u_udp/u_udp_tx/tx_done to udp_tx_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             35   0.525   1.569  u_udp/u_udp_tx/tx_done (u_udp/u_udp_tx/tx_done)
+     OBUF:I->O                 2.912          udp_tx_done_OBUF (udp_tx_done)
+    ----------------------------------------
+    Total                      5.006ns (3.437ns logic, 1.569ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.316ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       eth_rst_n (PAD)
+
+  Data Path: sys_rst_n to eth_rst_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            83   1.328   2.076  sys_rst_n_IBUF (eth_rst_n_OBUF)
+     OBUF:I->O                 2.912          eth_rst_n_OBUF (eth_rst_n)
+    ----------------------------------------
+    Total                      6.316ns (4.240ns logic, 2.076ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock eth_rxc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+eth_rxc        |    8.019|         |    2.752|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.97 secs
+ 
+--> 
+
+Total memory usage is 4536400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  156 (   0 filtered)
+Number of infos    :  106 (   0 filtered)
+

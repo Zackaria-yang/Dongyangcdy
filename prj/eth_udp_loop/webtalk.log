@@ -1,0 +1,16 @@
+Release 14.7 - WebTalk (P.20131013)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=F96118857ADD46A0ABB1358ADB94E706
+ProjectIteration=73
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:5 - D:/download1/fpga/ISE/ISE_pro/eth_udp_pc_copy_04/prj/eth_udp_loop/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at D:/download1/fpga/ISE/ISE_app/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

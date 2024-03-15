@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 21 19:07:32 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst_pin<1> = BEL
+        "u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst" PINNAME O;
+PIN "u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst_pin<1>" CLOCK_DEDICATED_ROUTE =
+        FALSE;
+SCHEMATIC END;
+

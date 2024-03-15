@@ -1,0 +1,93 @@
+//NET  u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst.O  CLOCK_DEDICATED_ROUTE = FALSE;
+//PIN  u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst.O  CLOCK_DEDICATED_ROUTE = FALSE;
+//NET  u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst.O  CLOCK_DEDICATED_ROUTE = FALSE;
+//PIN  u_gmii_to_rgmii/u_rgmii_rx/clkin_buf_inst.O  CLOCK_DEDICATED_ROUTE = FALSE;
+############################################################################
+# VCC AUX VOLTAGE 
+############################################################################
+CONFIG VCCAUX=2.5; # Valid values are 2.5 and 3.3
+
+############################################################################
+# DDR2 requires the MCB to operate in Extended performance mode with higher Vccint
+# specification to achieve maximum frequency. Therefore, the following CONFIG constraint
+# follows the corresponding GUI option setting. However, DDR3 can operate at higher 
+# frequencies with any Vcciint value by operating MCB in extended mode. Please do not
+# remove/edit the below constraint to avoid false errors.
+############################################################################
+CONFIG MCB_PERFORMANCE= EXTENDED;
+
+
+
+     
+
+NET sys_rst_n  LOC = G16 | IOSTANDARD =  LVCMOS33 ; 
+ 
+Net sys_clk LOC = N8 | TNM_NET = sys_clk_pin;
+TIMESPEC  TS_sys_clk  = PERIOD  sys_clk   20  ns HIGH 50 %;
+
+############################################����ͷ###################################################
+NET cam_pclk                         LOC = D5 | IOSTANDARD =  LVCMOS33  | TNM_NET = cam_pclk_pin ;    
+TIMESPEC TS_cam_pclk_pin = PERIOD cam_pclk_pin 24000 kHz;
+NET  cam_pclk  CLOCK_DEDICATED_ROUTE = TRUE;
+  
+NET cam_scl                           LOC = D11 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_sda                           LOC = D9 | IOSTANDARD =  LVCMOS33 ;        
+NET cam_vsync                         LOC = D12 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_href                          LOC = E10 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[7]                       LOC = C6 | IOSTANDARD =  LVCMOS33 ;    
+NET cam_data[6]                       LOC = F7 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[5]                       LOC = D6 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[4]                       LOC = E7 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[3]                       LOC = E8 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[2]                       LOC = C8 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[1]                       LOC = P11 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_data[0]                       LOC = F9 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_pwdn                          LOC = E6 | IOSTANDARD =  LVCMOS33 ;       
+NET cam_rst_n                         LOC = C10 | IOSTANDARD =  LVCMOS33 ; 
+
+############################################HDMI####################################################
+
+//NET tmds_data_p[0]                        LOC = R7 | IOSTANDARD =  TMDS_33 ; 
+//NET tmds_data_p[1]                        LOC = P8 | IOSTANDARD =  TMDS_33 ; 
+//NET tmds_data_p[2]                        LOC = R9 | IOSTANDARD =  TMDS_33 ; 
+//NET tmds_clk_p                            LOC = P6 | IOSTANDARD =  TMDS_33 ;  
+
+############################################ETH####################################################
+NET eth_rxc                   TNM_NET = eth_rxc_pin;
+TIMESPEC TS_eth_rxc_pin = PERIOD eth_rxc_pin 125000 kHz;
+
+NET eth_rxc                   LOC = J16 | IOSTANDARD =  LVCMOS33 ;        
+NET eth_rx_ctl                LOC = P16 | IOSTANDARD =  LVCMOS33 ;       
+NET eth_rxd<0>                LOC = N16 | IOSTANDARD =  LVCMOS33 ;        
+NET eth_rxd<1>                LOC = M16 | IOSTANDARD =  LVCMOS33 ;   
+NET eth_rxd<2>                LOC = L16 | IOSTANDARD =  LVCMOS33 ;   
+NET eth_rxd<3>                LOC = K16 | IOSTANDARD =  LVCMOS33 ;     
+NET eth_txc                   LOC = R16 | IOSTANDARD =  LVCMOS33 ;        
+NET eth_tx_ctl                LOC = R15 | IOSTANDARD =  LVCMOS33 ;       
+NET eth_txd<0>                LOC = T15 | IOSTANDARD =  LVCMOS33 ;        
+NET eth_txd<1>                LOC = T14 | IOSTANDARD =  LVCMOS33 ;   
+NET eth_txd<2>                LOC = T13 | IOSTANDARD =  LVCMOS33 ;   
+NET eth_txd<3>                LOC = T12 | IOSTANDARD =  LVCMOS33 ; 
+NET eth_rst_n                 LOC = J14 | IOSTANDARD =  LVCMOS33 ;
+
+
+
+NET  led                LOC = T5 | IOSTANDARD =  LVCMOS33 ;
+
+NET remote_in           LOC = L8 | IOSTANDARD =  LVCMOS33 ; 
+
+NET  seg_led[0]  LOC = J12 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[1]  LOC = H13 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[2]  LOC = L12 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[3]  LOC = K11 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[4]  LOC = L13 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[5]  LOC = L14 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[6]  LOC = K12 | IOSTANDARD =  LVCMOS33 ;
+NET  seg_led[7]  LOC = M13 | IOSTANDARD =  LVCMOS33 ;
+
+NET  sel[5]  LOC = G12 | IOSTANDARD =  LVCMOS33 ;
+NET  sel[4]  LOC = H11 | IOSTANDARD =  LVCMOS33 ;
+NET  sel[3]  LOC = F13 | IOSTANDARD =  LVCMOS33 ;
+NET  sel[2]  LOC = J13 | IOSTANDARD =  LVCMOS33 ;
+NET  sel[1]  LOC = N14 | IOSTANDARD =  LVCMOS33 ;
+NET  sel[0]  LOC = M14 | IOSTANDARD =  LVCMOS33 ;
